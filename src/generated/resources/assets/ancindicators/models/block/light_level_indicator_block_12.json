@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ancindicators:block/light_level_indicator_block_12"
+  }
+}

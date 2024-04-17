@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ancindicators:block/light_level_indicator_block_1"
+    }
+  }
+}
