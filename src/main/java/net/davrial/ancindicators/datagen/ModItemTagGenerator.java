@@ -185,6 +185,52 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 )
         ;
 
+        this.tag(ModTags.Items.REDSTONE_INDICATOR_ITEMS)
+                .add(ModItems.REDSTONE_INDICATOR_ITEM_0.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_1.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_2.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_3.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_4.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_5.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_6.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_7.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_8.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_9.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_10.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_11.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_12.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_13.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_14.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_15.get(),
+                        ModItems.REDSTONE_INDICATOR_TEMPLATE_ITEM.get(),
+                        ModItems.BLANK_REDSTONE_INDICATOR_ITEM.get()
+                )
+        ;
+
+        this.tag(ModTags.Items.LIGHT_LEVEL_INDICATOR_ITEMS)
+                .add(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_0.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_1.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_2.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_3.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_4.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_5.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_6.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_7.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_8.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_9.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_10.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_11.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_12.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_13.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_14.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_15.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_TEMPLATE_ITEM.get(),
+                        ModItems.BLANK_LIGHT_LEVEL_INDICATOR_ITEM.get()
+                )
+        ;
+
+
+
         this.copy(ModTags.Blocks.BLANK_INDICATOR_BLOCKS, ModTags.Items.BLANK_INDICATOR_BLOCK_ITEMS);
         this.copy(ModTags.Blocks.ALPHABETIC_INDICATOR_BLOCKS, ModTags.Items.ALPHABETIC_INDICATOR_BLOCK_ITEMS);
         this.copy(ModTags.Blocks.MISC_NUMERIC_INDICATOR_BLOCKS, ModTags.Items.MISC_NUMERIC_INDICATOR_BLOCK_ITEMS);
@@ -196,18 +242,18 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.copy(ModTags.Blocks.TEXT_COLOR_INDICATOR_BLOCKS_DARK, ModTags.Items.TEXT_COLOR_INDICATOR_BLOCK_ITEMS_DARK);
         this.copy(ModTags.Blocks.REDSTONE_INDICATOR_BLOCKS, ModTags.Items.REDSTONE_INDICATOR_BLOCK_ITEMS);
         this.copy(ModTags.Blocks.LIGHT_LEVEL_INDICATOR_BLOCKS, ModTags.Items.LIGHT_LEVEL_INDICATOR_BLOCK_ITEMS);
+        this.copy(ModTags.Blocks.ADVANCED_INDICATOR_BLOCKS, ModTags.Items.ADVANCED_INDICATOR_BLOCK_ITEMS);
 
         this.tag(ModTags.Items.ALL_INDICATOR_BLOCK_ITEMS)
                 .addTag(ModTags.Items.BLANK_INDICATOR_BLOCK_ITEMS)
                 .addTag(ModTags.Items.NON_BLANK_INDICATOR_BLOCK_ITEMS)
+                .addTag(ModTags.Items.ADVANCED_INDICATOR_BLOCK_ITEMS)
         ;
         this.tag(ModTags.Items.BLANK_INDICATOR_BLOCK_ITEMS);
         this.tag(ModTags.Items.NON_BLANK_INDICATOR_BLOCK_ITEMS)
                 .addTag(ModTags.Items.ALPHABETIC_INDICATOR_BLOCK_ITEMS)
                 .addTag(ModTags.Items.NUMERIC_INDICATOR_BLOCK_ITEMS)
                 .addTag(ModTags.Items.COLOR_INDICATOR_BLOCK_ITEMS)
-                .addTag(ModTags.Items.REDSTONE_INDICATOR_BLOCK_ITEMS)
-                .addTag(ModTags.Items.LIGHT_LEVEL_INDICATOR_BLOCK_ITEMS)
         ;
         this.tag(ModTags.Items.ALPHABETIC_INDICATOR_BLOCK_ITEMS);
         this.tag(ModTags.Items.NUMERIC_INDICATOR_BLOCK_ITEMS)
@@ -228,6 +274,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.TEXT_COLOR_INDICATOR_BLOCK_ITEMS);
         this.tag(ModTags.Items.REDSTONE_INDICATOR_BLOCK_ITEMS);
         this.tag(ModTags.Items.LIGHT_LEVEL_INDICATOR_BLOCK_ITEMS);
+        this.tag(ModTags.Items.ADVANCED_INDICATOR_BLOCK_ITEMS);
 
 
 

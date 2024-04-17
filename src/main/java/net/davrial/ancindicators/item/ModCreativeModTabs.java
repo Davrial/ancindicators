@@ -372,6 +372,26 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_14.get());
                         pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_15.get());
 
+                        //Light Level Blocks
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_0.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_1.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_2.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_3.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_4.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_5.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_6.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_7.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_8.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_9.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_10.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_11.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_12.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_13.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_14.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_15.get());
+
                     })
                     .build()
     );
@@ -390,6 +410,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED.get());
                         pOutput.accept(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK.get());
                     })
                     .build()
     );
@@ -531,7 +553,7 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get()))
                     .title(Component.translatable("creativetab.ancindicators_redstone_blocks_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        //Block Color Blocks
+                        //Redstone Blocks
                         pOutput.accept(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get());
                         pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_0.get());
@@ -550,6 +572,33 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_13.get());
                         pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_14.get());
                         pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_15.get());
+                    })
+                    .build()
+    );
+
+    public static final RegistryObject<CreativeModeTab> ANCINDICATORS_LIGHT_LEVEL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("ancindicators_light_level_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK.get()))
+                    .title(Component.translatable("creativetab.ancindicators_light_level_blocks_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        //Light Level Blocks
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_0.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_1.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_2.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_3.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_4.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_5.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_6.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_7.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_8.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_9.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_10.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_11.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_12.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_13.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_14.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_15.get());
                     })
                     .build()
     );

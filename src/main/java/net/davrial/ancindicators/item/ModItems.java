@@ -287,7 +287,82 @@ public class ModItems {
     public static final RegistryObject<Item> TEXT_COLOR_INDICATOR_ITEM_MATERIAL_AMETHYST = ITEMS.register("text_color_indicator_item_material_amethyst",
             () -> new Item(new Item.Properties()));
 
+    //Redstone Items
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_TEMPLATE_ITEM = ITEMS.register("redstone_indicator_template_item",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLANK_REDSTONE_INDICATOR_ITEM = ITEMS.register("blank_redstone_indicator_item",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_0 = ITEMS.register("redstone_indicator_item_0",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_1 = ITEMS.register("redstone_indicator_item_1",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_2 = ITEMS.register("redstone_indicator_item_2",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_3 = ITEMS.register("redstone_indicator_item_3",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_4 = ITEMS.register("redstone_indicator_item_4",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_5 = ITEMS.register("redstone_indicator_item_5",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_6 = ITEMS.register("redstone_indicator_item_6",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_7 = ITEMS.register("redstone_indicator_item_7",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_8 = ITEMS.register("redstone_indicator_item_8",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_9 = ITEMS.register("redstone_indicator_item_9",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_10 = ITEMS.register("redstone_indicator_item_10",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_11 = ITEMS.register("redstone_indicator_item_11",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_12 = ITEMS.register("redstone_indicator_item_12",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_13 = ITEMS.register("redstone_indicator_item_13",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_14 = ITEMS.register("redstone_indicator_item_14",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_INDICATOR_ITEM_15 = ITEMS.register("redstone_indicator_item_15",
+            () -> new Item(new Item.Properties()));
 
+    //Light Level Items
+
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_TEMPLATE_ITEM = ITEMS.register("redstone_indicator_template_item",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLANK_LIGHT_LEVEL_INDICATOR_ITEM = ITEMS.register("blank_redstone_indicator_item",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_0 = ITEMS.register("light_level_indicator_item_0",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_1 = ITEMS.register("light_level_indicator_item_1",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_2 = ITEMS.register("light_level_indicator_item_2",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_3 = ITEMS.register("light_level_indicator_item_3",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_4 = ITEMS.register("light_level_indicator_item_4",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_5 = ITEMS.register("light_level_indicator_item_5",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_6 = ITEMS.register("light_level_indicator_item_6",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_7 = ITEMS.register("light_level_indicator_item_7",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_8 = ITEMS.register("light_level_indicator_item_8",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_9 = ITEMS.register("light_level_indicator_item_9",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_10 = ITEMS.register("light_level_indicator_item_10",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_11 = ITEMS.register("light_level_indicator_item_11",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_12 = ITEMS.register("light_level_indicator_item_12",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_13 = ITEMS.register("light_level_indicator_item_13",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_14 = ITEMS.register("light_level_indicator_item_14",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_15 = ITEMS.register("light_level_indicator_item_15",
+            () -> new Item(new Item.Properties()));
 
 
 

@@ -79,6 +79,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.ALL_INDICATOR_BLOCKS)
                 .addTag(ModTags.Blocks.BLANK_INDICATOR_BLOCKS)
                 .addTag(ModTags.Blocks.NON_BLANK_INDICATOR_BLOCKS)
+                .addTag(ModTags.Blocks.ADVANCED_INDICATOR_BLOCKS)
         ;
 
         this.tag(ModTags.Blocks.BLANK_INDICATOR_BLOCKS)
@@ -94,9 +95,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModTags.Blocks.NUMERIC_INDICATOR_BLOCKS)
                 .addTag(ModTags.Blocks.BLOCK_COLOR_INDICATOR_BLOCKS)
                 .addTag(ModTags.Blocks.TEXT_COLOR_INDICATOR_BLOCKS)
+        ;
+
+        this.tag(ModTags.Blocks.ADVANCED_INDICATOR_BLOCKS)
                 .addTag(ModTags.Blocks.REDSTONE_INDICATOR_BLOCKS)
                 .addTag(ModTags.Blocks.LIGHT_LEVEL_INDICATOR_BLOCKS)
         ;
+
 
         this.tag(ModTags.Blocks.COLOR_INDICATOR_BLOCKS)
                 .addTag(ModTags.Blocks.BLOCK_COLOR_INDICATOR_BLOCKS)

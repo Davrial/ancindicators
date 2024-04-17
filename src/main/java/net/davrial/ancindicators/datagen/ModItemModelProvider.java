@@ -88,6 +88,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BLOCK_COLOR_INDICATOR_TEMPLATE_ITEM);
         simpleItem(ModItems.TEXT_COLOR_INDICATOR_TEMPLATE_ITEM);
         simpleItem(ModItems.TEXT_COLOR_INDICATOR_TEMPLATE_ITEM_DARKENED);
+        simpleItem(ModItems.REDSTONE_INDICATOR_TEMPLATE_ITEM);
+        simpleItem(ModItems.BLANK_REDSTONE_INDICATOR_ITEM);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_TEMPLATE_ITEM);
+        simpleItem(ModItems.BLANK_LIGHT_LEVEL_INDICATOR_ITEM);
 
         //Misc Items
         handheldItem(ModItems.ERASER);
@@ -199,6 +203,43 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_DIAMOND);
         simpleItem(ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_LAPIS);
         simpleItem(ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_AMETHYST);
+
+        //Redstone Items
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_0);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_1);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_2);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_3);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_4);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_5);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_6);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_7);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_8);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_9);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_10);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_11);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_12);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_13);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_14);
+        simpleItem(ModItems.REDSTONE_INDICATOR_ITEM_15);
+
+        //Light Level Items
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_0);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_1);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_2);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_3);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_4);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_5);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_6);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_7);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_8);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_9);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_10);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_11);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_12);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_13);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_14);
+        simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_15);
+
     }
 
 
