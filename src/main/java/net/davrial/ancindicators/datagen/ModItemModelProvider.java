@@ -62,7 +62,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_FENCE_GATE);
 
         trapdoorItem(ModBlocks.SAPPHIRE_TRAPDOOR);
-        */
 
         handheldItem(ModItems.SAPPHIRE_SWORD);
         handheldItem(ModItems.SAPPHIRE_PICKAXE);
@@ -74,6 +73,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);
         trimmedArmorItem(ModItems.SAPPHIRE_LEGGINGS);
         trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
+
+         */
 
 
 
