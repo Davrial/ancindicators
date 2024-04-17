@@ -62,6 +62,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BLOCK_COLOR_INDICATOR_TEMPLATE_BLOCK.get());
         this.dropSelf(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK.get());
         this.dropSelf(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get());
+        this.dropSelf(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK.get());
+        this.dropSelf(ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK.get());
 
         //Alphabetic Blocks
         this.dropSelf(ModBlocks.ALPHABETIC_INDICATOR_BLOCK_A.get());
@@ -167,6 +171,40 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_DIAMOND.get());
         this.dropSelf(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_LAPIS.get());
         this.dropSelf(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_AMETHYST.get());
+
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_0.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_1.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_2.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_3.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_4.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_5.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_6.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_7.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_8.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_9.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_10.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_11.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_12.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_13.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_14.get());
+        this.dropSelf(ModBlocks.REDSTONE_INDICATOR_BLOCK_15.get());
+
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_0.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_1.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_2.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_3.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_4.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_5.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_6.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_7.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_8.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_9.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_10.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_11.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_12.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_13.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_14.get());
+        this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_15.get());
 
 
     }

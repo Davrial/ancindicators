@@ -52,6 +52,8 @@
   "block.ancindicators.block_color_indicator_template_block": "Block Color Indicator Template Block",
   "block.ancindicators.text_color_indicator_template_block": "Text Color Indicator Template Block",
   "block.ancindicators.text_color_indicator_template_block_darkened": "Darkened Text Color Indicator Template Block",
+  "block.ancindicators.redstone_indicator_template_block": "Redstone Indicator Template Block",
+  "block.ancindicators.blank_redstone_indicator_block": "Blank Redstone Indicator Block",
 
   "block.ancindicators.alphabetic_indicator_block_a": "Alphabetic Indicator: A (Block)",
   "block.ancindicators.alphabetic_indicator_block_b": "Alphabetic Indicator: B (Block)",
@@ -153,6 +155,24 @@
   "block.ancindicators.text_color_indicator_block_material_diamond": "Text Color Indicator: Material: Diamond (Block)",
   "block.ancindicators.text_color_indicator_block_material_lapis": "Text Color Indicator: Material: Lapis (Block)",
   "block.ancindicators.text_color_indicator_block_material_amethyst": "Text Color Indicator: Material: Amethyst (Block)",
+
+  "block.ancindicators.redstone_indicator_block_0": "Redstone Indicator Block: Signal Strength 0",
+  "block.ancindicators.redstone_indicator_block_1": "Redstone Indicator Block: Signal Strength 1",
+  "block.ancindicators.redstone_indicator_block_2": "Redstone Indicator Block: Signal Strength 2",
+  "block.ancindicators.redstone_indicator_block_3": "Redstone Indicator Block: Signal Strength 3",
+  "block.ancindicators.redstone_indicator_block_4": "Redstone Indicator Block: Signal Strength 4",
+  "block.ancindicators.redstone_indicator_block_5": "Redstone Indicator Block: Signal Strength 5",
+  "block.ancindicators.redstone_indicator_block_6": "Redstone Indicator Block: Signal Strength 6",
+  "block.ancindicators.redstone_indicator_block_7": "Redstone Indicator Block: Signal Strength 7",
+  "block.ancindicators.redstone_indicator_block_8": "Redstone Indicator Block: Signal Strength 8",
+  "block.ancindicators.redstone_indicator_block_9": "Redstone Indicator Block: Signal Strength 9",
+  "block.ancindicators.redstone_indicator_block_10": "Redstone Indicator Block: Signal Strength 10",
+  "block.ancindicators.redstone_indicator_block_11": "Redstone Indicator Block: Signal Strength 11",
+  "block.ancindicators.redstone_indicator_block_12": "Redstone Indicator Block: Signal Strength 12",
+  "block.ancindicators.redstone_indicator_block_13": "Redstone Indicator Block: Signal Strength 13",
+  "block.ancindicators.redstone_indicator_block_14": "Redstone Indicator Block: Signal Strength 14",
+  "block.ancindicators.redstone_indicator_block_15": "Redstone Indicator Block: Signal Strength 15",
+
 
 
 
@@ -267,6 +287,7 @@
 
 
 
+
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
   "creativetab.ancindicators_misc_items_tab": "ANC Indicators Misc Items Tab",
   "creativetab.ancindicators_all_blocks_tab": "ANC Indicators All Blocks Tab",
@@ -275,6 +296,7 @@
   "creativetab.ancindicators_numeric_blocks_tab": "ANC Indicators Numeric Blocks Tab",
   "creativetab.ancindicators_block_color_blocks_tab": "ANC Indicators Block Color Blocks Tab",
   "creativetab.ancindicators_text_color_blocks_tab": "ANC Indicators Text Color Blocks Tab",
+  "creativetab.ancindicators_redstone_blocks_tab": "ANC Indicators Redstone Blocks Tab",
   "creativetab.ancindicators_all_items_tab": "ANC Indicators All Items Tab",
   "creativetab.ancindicators_base_items_tab": "ANC Indicators Base Items Tab",
   "creativetab.ancindicators_alphabetic_items_tab": "ANC Indicators Alphabetic Items Tab",

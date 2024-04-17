@@ -1,6 +1,8 @@
 {
   "values": [
     "ancindicators:blank_indicator_block",
-    "ancindicators:darkened_blank_indicator_block"
+    "ancindicators:darkened_blank_indicator_block",
+    "ancindicators:blank_redstone_indicator_block",
+    "ancindicators:blank_light_level_indicator_block"
   ]
 }

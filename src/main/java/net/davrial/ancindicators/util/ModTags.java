@@ -29,6 +29,8 @@ public class ModTags {
         public static final TagKey<Block> BLOCK_COLOR_INDICATOR_BLOCKS = tag("block_color_indicator_blocks");
         public static final TagKey<Block> TEXT_COLOR_INDICATOR_BLOCKS = tag("text_color_indicator_blocks");
         public static final TagKey<Block> TEXT_COLOR_INDICATOR_BLOCKS_DARK = tag("text_color_indicator_blocks_dark");
+        public static final TagKey<Block> REDSTONE_INDICATOR_BLOCKS = tag("redstone_indicator_blocks");
+        public static final TagKey<Block> LIGHT_LEVEL_INDICATOR_BLOCKS = tag("light_level_indicator_blocks");
 
 
 
@@ -63,6 +65,8 @@ public class ModTags {
         public static final TagKey<Item> BLOCK_COLOR_INDICATOR_BLOCK_ITEMS = tag("block_color_indicator_block_items");
         public static final TagKey<Item> TEXT_COLOR_INDICATOR_BLOCK_ITEMS = tag("text_color_indicator_block_items");
         public static final TagKey<Item> TEXT_COLOR_INDICATOR_BLOCK_ITEMS_DARK = tag("text_color_indicator_block_items_dark");
+        public static final TagKey<Item> REDSTONE_INDICATOR_BLOCK_ITEMS = tag("redstone_indicator_block_items");
+        public static final TagKey<Item> LIGHT_LEVEL_INDICATOR_BLOCK_ITEMS = tag("redstone_indicator_block_items");
         public static final TagKey<Item> INDICATOR_DARKENING_ITEMS = tag("indicator_darkening_items");
         public static final TagKey<Item> INDICATOR_DARKENING_ITEMS_WITH_DYES = tag("indicator_darkening_items_with_dyes");
         public static final TagKey<Item> WRITING_ITEMS = tag("writing_items");

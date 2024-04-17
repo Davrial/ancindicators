@@ -245,6 +245,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.BLOCK_COLOR_INDICATOR_TEMPLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get());
 
                         //Alphabetic Blocks
                         pOutput.accept(ModBlocks.ALPHABETIC_INDICATOR_BLOCK_A.get());
@@ -352,6 +354,24 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_LAPIS.get());
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_AMETHYST.get());
 
+                        //Redstone Blocks
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_0.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_1.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_2.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_3.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_4.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_5.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_6.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_7.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_8.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_9.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_10.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_11.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_12.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_13.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_14.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_15.get());
+
                     })
                     .build()
     );
@@ -368,6 +388,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.BLOCK_COLOR_INDICATOR_TEMPLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get());
                     })
                     .build()
     );
@@ -501,6 +523,33 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_DIAMOND.get());
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_LAPIS.get());
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_AMETHYST.get());
+                    })
+                    .build()
+    );
+
+    public static final RegistryObject<CreativeModeTab> ANCINDICATORS_REDSTONE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("ancindicators_redstone_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get()))
+                    .title(Component.translatable("creativetab.ancindicators_redstone_blocks_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        //Block Color Blocks
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_0.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_1.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_2.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_3.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_4.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_5.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_6.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_7.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_8.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_9.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_10.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_11.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_12.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_13.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_14.get());
+                        pOutput.accept(ModBlocks.REDSTONE_INDICATOR_BLOCK_15.get());
                     })
                     .build()
     );

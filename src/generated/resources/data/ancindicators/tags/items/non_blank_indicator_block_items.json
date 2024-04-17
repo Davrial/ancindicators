@@ -2,6 +2,8 @@
   "values": [
     "#ancindicators:alphabetic_indicator_block_items",
     "#ancindicators:numeric_indicator_block_items",
-    "#ancindicators:color_indicator_block_items"
+    "#ancindicators:color_indicator_block_items",
+    "#ancindicators:redstone_indicator_block_items",
+    "#ancindicators:redstone_indicator_block_items"
   ]
 }

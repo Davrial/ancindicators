@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ancindicators:block/redstone_indicator_block_10"
+    }
+  }
+}

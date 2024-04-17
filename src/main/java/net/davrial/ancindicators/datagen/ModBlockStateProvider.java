@@ -50,6 +50,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLOCK_COLOR_INDICATOR_TEMPLATE_BLOCK);
         blockWithItem(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK);
         blockWithItem(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK);
+        blockWithItem(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK);
+        blockWithItem(ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK);
 
         //Alphabetic Blocks
         blockWithItem(ModBlocks.ALPHABETIC_INDICATOR_BLOCK_A);
@@ -157,6 +161,40 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_LAPIS);
         blockWithItem(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_AMETHYST);
 
+        //Redstone Blocks
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_0);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_1);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_2);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_3);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_4);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_5);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_6);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_7);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_8);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_9);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_10);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_11);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_12);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_13);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_14);
+        blockWithItem(ModBlocks.REDSTONE_INDICATOR_BLOCK_15);
+
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_0);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_1);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_2);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_3);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_4);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_5);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_6);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_7);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_8);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_9);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_10);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_11);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_12);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_13);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_14);
+        blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_15);
 
 
 

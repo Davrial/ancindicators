@@ -1,6 +1,22 @@
 package net.davrial.ancindicators.block;
 
 import net.davrial.ancindicators.ANCIndicators;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock0;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock1;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock2;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock3;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock4;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock5;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock6;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock7;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock8;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock9;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock10;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock11;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock12;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock13;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock14;
+import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock15;
 import net.davrial.ancindicators.block.custom.SoundBlock;
 import net.davrial.ancindicators.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
@@ -18,6 +34,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
@@ -96,7 +113,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED  = registerBlock("text_color_indicator_template_block_darkened",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> REDSTONE_INDICATOR_TEMPLATE_BLOCK  = registerBlock("redstone_indicator_template_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.REDSTONE_BLOCK)));
+            () -> new RedstoneIndicatorBlock15(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> BLANK_REDSTONE_INDICATOR_BLOCK  = registerBlock("blank_redstone_indicator_block",
+            () -> new RedstoneIndicatorBlock15(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK  = registerBlock("light_level_indicator_template_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 15).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> BLANK_LIGHT_LEVEL_INDICATOR_BLOCK  = registerBlock("blank_light_level_indicator_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 15).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+
 
     //Alphabetic Blocks
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_A  = registerBlock("alphabetic_indicator_block_a",
@@ -301,6 +325,73 @@ public class ModBlocks {
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_AMETHYST  = registerBlock("text_color_indicator_block_material_amethyst",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_PURPLE)));
 
+    //Redstone Signal Blocks
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_0  = registerBlock("redstone_indicator_block_0",
+            () -> new RedstoneIndicatorBlock0(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_1  = registerBlock("redstone_indicator_block_1",
+            () -> new RedstoneIndicatorBlock1(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_2  = registerBlock("redstone_indicator_block_2",
+            () -> new RedstoneIndicatorBlock2(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_3  = registerBlock("redstone_indicator_block_3",
+            () -> new RedstoneIndicatorBlock3(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_4  = registerBlock("redstone_indicator_block_4",
+            () -> new RedstoneIndicatorBlock4(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_5  = registerBlock("redstone_indicator_block_5",
+            () -> new RedstoneIndicatorBlock5(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_6  = registerBlock("redstone_indicator_block_6",
+            () -> new RedstoneIndicatorBlock6(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_7  = registerBlock("redstone_indicator_block_7",
+            () -> new RedstoneIndicatorBlock7(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_8  = registerBlock("redstone_indicator_block_8",
+            () -> new RedstoneIndicatorBlock8(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_9  = registerBlock("redstone_indicator_block_9",
+            () -> new RedstoneIndicatorBlock9(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_10  = registerBlock("redstone_indicator_block_10",
+            () -> new RedstoneIndicatorBlock10(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_11  = registerBlock("redstone_indicator_block_11",
+            () -> new RedstoneIndicatorBlock11(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_12  = registerBlock("redstone_indicator_block_12",
+            () -> new RedstoneIndicatorBlock12(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_13  = registerBlock("redstone_indicator_block_13",
+            () -> new RedstoneIndicatorBlock13(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_14  = registerBlock("redstone_indicator_block_14",
+            () -> new RedstoneIndicatorBlock14(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_BLOCK_15  = registerBlock("redstone_indicator_block_15",
+            () -> new RedstoneIndicatorBlock15(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE).emissiveRendering((bs, br, bp) -> true)));
+
+    //Light Level Blocks
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_0  = registerBlock("light_level_indicator_block_0",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 0).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_1  = registerBlock("light_level_indicator_block_1",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 1).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_2  = registerBlock("light_level_indicator_block_2",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 2).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_3  = registerBlock("light_level_indicator_block_3",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 3).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_4  = registerBlock("light_level_indicator_block_4",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 4).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_5  = registerBlock("light_level_indicator_block_5",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 5).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_6  = registerBlock("light_level_indicator_block_6",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 6).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_7  = registerBlock("light_level_indicator_block_7",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 7).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_8  = registerBlock("light_level_indicator_block_8",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 8).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_9  = registerBlock("light_level_indicator_block_9",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 9).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_10  = registerBlock("light_level_indicator_block_10",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 10).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_11  = registerBlock("light_level_indicator_block_11",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 11).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_12  = registerBlock("light_level_indicator_block_12",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 12).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_13  = registerBlock("light_level_indicator_block_13",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 13).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_14  = registerBlock("light_level_indicator_block_14",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 14).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+    public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_15  = registerBlock("light_level_indicator_block_15",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 15).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
 
 
 

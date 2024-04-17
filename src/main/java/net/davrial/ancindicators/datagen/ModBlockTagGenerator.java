@@ -83,7 +83,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(ModTags.Blocks.BLANK_INDICATOR_BLOCKS)
                 .add(ModBlocks.BLANK_INDICATOR_BLOCK.get(),
-                        ModBlocks.DARKENED_BLANK_INDICATOR_BLOCK.get()
+                        ModBlocks.DARKENED_BLANK_INDICATOR_BLOCK.get(),
+                        ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get(),
+                        ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK.get()
                 )
         ;
 
@@ -92,6 +94,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModTags.Blocks.NUMERIC_INDICATOR_BLOCKS)
                 .addTag(ModTags.Blocks.BLOCK_COLOR_INDICATOR_BLOCKS)
                 .addTag(ModTags.Blocks.TEXT_COLOR_INDICATOR_BLOCKS)
+                .addTag(ModTags.Blocks.REDSTONE_INDICATOR_BLOCKS)
+                .addTag(ModTags.Blocks.LIGHT_LEVEL_INDICATOR_BLOCKS)
         ;
 
         this.tag(ModTags.Blocks.COLOR_INDICATOR_BLOCKS)
@@ -266,6 +270,48 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED.get()
                 )
         ;
+        this.tag(ModTags.Blocks.REDSTONE_INDICATOR_BLOCKS)
+                .add(ModBlocks.REDSTONE_INDICATOR_BLOCK_0.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_1.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_2.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_3.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_4.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_5.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_6.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_7.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_8.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_9.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_10.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_11.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_12.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_13.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_14.get(),
+                    ModBlocks.REDSTONE_INDICATOR_BLOCK_15.get(),
+                    ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get(),
+                    ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get()
+                )
+        ;
 
+        this.tag(ModTags.Blocks.LIGHT_LEVEL_INDICATOR_BLOCKS)
+                .add(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_0.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_1.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_2.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_3.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_4.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_5.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_6.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_7.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_8.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_9.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_10.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_11.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_12.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_13.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_14.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_15.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK.get(),
+                        ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK.get()
+                )
+        ;
     }
 }
