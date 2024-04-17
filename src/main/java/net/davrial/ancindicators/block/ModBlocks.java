@@ -6,10 +6,12 @@ import net.davrial.ancindicators.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -80,222 +82,224 @@ public class ModBlocks {
     //My Blocks
     //Main Blocks
     public static final RegistryObject<Block> BLANK_INDICATOR_BLOCK  = registerBlock("blank_indicator_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> DARKENED_BLANK_INDICATOR_BLOCK  = registerBlock("darkened_blank_indicator_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_TEMPLATE_BLOCK  = registerBlock("alphabetic_indicator_template_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_TEMPLATE_BLOCK  = registerBlock("numeric_indicator_template_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_TEMPLATE_BLOCK  = registerBlock("block_color_indicator_template_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK  = registerBlock("text_color_indicator_template_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED  = registerBlock("text_color_indicator_template_block_darkened",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
+    public static final RegistryObject<Block> REDSTONE_INDICATOR_TEMPLATE_BLOCK  = registerBlock("redstone_indicator_template_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.REDSTONE_BLOCK)));
 
     //Alphabetic Blocks
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_A  = registerBlock("alphabetic_indicator_block_a",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_B  = registerBlock("alphabetic_indicator_block_b",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_C  = registerBlock("alphabetic_indicator_block_c",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_D  = registerBlock("alphabetic_indicator_block_d",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_E  = registerBlock("alphabetic_indicator_block_e",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_F  = registerBlock("alphabetic_indicator_block_f",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_G  = registerBlock("alphabetic_indicator_block_g",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_H  = registerBlock("alphabetic_indicator_block_h",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_I  = registerBlock("alphabetic_indicator_block_i",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_J  = registerBlock("alphabetic_indicator_block_j",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_K  = registerBlock("alphabetic_indicator_block_k",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_L  = registerBlock("alphabetic_indicator_block_l",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_M  = registerBlock("alphabetic_indicator_block_m",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_N  = registerBlock("alphabetic_indicator_block_n",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_O  = registerBlock("alphabetic_indicator_block_o",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_P  = registerBlock("alphabetic_indicator_block_p",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_Q  = registerBlock("alphabetic_indicator_block_q",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_R  = registerBlock("alphabetic_indicator_block_r",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_S  = registerBlock("alphabetic_indicator_block_s",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_T  = registerBlock("alphabetic_indicator_block_t",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_U  = registerBlock("alphabetic_indicator_block_u",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_V  = registerBlock("alphabetic_indicator_block_v",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_W  = registerBlock("alphabetic_indicator_block_w",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_X  = registerBlock("alphabetic_indicator_block_x",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_Y  = registerBlock("alphabetic_indicator_block_y",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> ALPHABETIC_INDICATOR_BLOCK_Z  = registerBlock("alphabetic_indicator_block_z",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
 
     //Numeric Blocks
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_0  = registerBlock("numeric_indicator_block_0",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_1  = registerBlock("numeric_indicator_block_1",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_2  = registerBlock("numeric_indicator_block_2",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_3  = registerBlock("numeric_indicator_block_3",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_4  = registerBlock("numeric_indicator_block_4",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_5  = registerBlock("numeric_indicator_block_5",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_6  = registerBlock("numeric_indicator_block_6",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_7  = registerBlock("numeric_indicator_block_7",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_8  = registerBlock("numeric_indicator_block_8",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_9  = registerBlock("numeric_indicator_block_9",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_10  = registerBlock("numeric_indicator_block_10",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_11  = registerBlock("numeric_indicator_block_11",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_12  = registerBlock("numeric_indicator_block_12",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_13  = registerBlock("numeric_indicator_block_13",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_14  = registerBlock("numeric_indicator_block_14",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_15  = registerBlock("numeric_indicator_block_15",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_16  = registerBlock("numeric_indicator_block_16",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_32  = registerBlock("numeric_indicator_block_32",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_64  = registerBlock("numeric_indicator_block_64",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_1000  = registerBlock("numeric_indicator_block_1000",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_EVEN  = registerBlock("numeric_indicator_block_even",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_ODD  = registerBlock("numeric_indicator_block_odd",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_INFINITY  = registerBlock("numeric_indicator_block_infinity",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_ADD  = registerBlock("numeric_indicator_block_add",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_SUBTRACT  = registerBlock("numeric_indicator_block_subtract",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_MULTIPLY  = registerBlock("numeric_indicator_block_multiply",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_DIVIDE  = registerBlock("numeric_indicator_block_divide",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_EQUALS  = registerBlock("numeric_indicator_block_equals",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
 
     //Block Color Blocks
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_WHITE  = registerBlock("block_color_indicator_block_white",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_LIGHT_GRAY  = registerBlock("block_color_indicator_block_light_gray",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.LIGHT_GRAY)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_GRAY  = registerBlock("block_color_indicator_block_gray",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.GRAY)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_BLACK  = registerBlock("block_color_indicator_block_black",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.BLACK)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_BROWN  = registerBlock("block_color_indicator_block_brown",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.BROWN)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_RED  = registerBlock("block_color_indicator_block_red",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.RED)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_ORANGE  = registerBlock("block_color_indicator_block_orange",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.ORANGE)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_YELLOW  = registerBlock("block_color_indicator_block_yellow",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.YELLOW)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_LIME  = registerBlock("block_color_indicator_block_lime",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.LIME)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_GREEN  = registerBlock("block_color_indicator_block_green",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.GREEN)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_CYAN  = registerBlock("block_color_indicator_block_cyan",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.CYAN)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_LIGHT_BLUE  = registerBlock("block_color_indicator_block_light_blue",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_BLUE  = registerBlock("block_color_indicator_block_blue",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.BLUE)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_PURPLE  = registerBlock("block_color_indicator_block_purple",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.PURPLE)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_MAGENTA  = registerBlock("block_color_indicator_block_magenta",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.MAGENTA)));
     public static final RegistryObject<Block> BLOCK_COLOR_INDICATOR_BLOCK_PINK  = registerBlock("block_color_indicator_block_pink",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(DyeColor.PINK)));
 
 
     //Text Color Blocks
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_BLACK  = registerBlock("text_color_indicator_block_black",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_BLACK)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_DARK_BLUE  = registerBlock("text_color_indicator_block_dark_blue",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_BLUE)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_DARK_GREEN  = registerBlock("text_color_indicator_block_dark_green",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_GREEN)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_DARK_AQUA  = registerBlock("text_color_indicator_block_dark_aqua",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_CYAN)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_DARK_RED  = registerBlock("text_color_indicator_block_dark_red",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_RED)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_DARK_PURPLE  = registerBlock("text_color_indicator_block_dark_purple",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_PURPLE)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_GOLD  = registerBlock("text_color_indicator_block_gold",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.TERRACOTTA_YELLOW)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_GRAY  = registerBlock("text_color_indicator_block_gray",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_LIGHT_GRAY)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_DARK_GRAY  = registerBlock("text_color_indicator_block_dark_gray",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_GRAY)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_BLUE  = registerBlock("text_color_indicator_block_blue",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_BLUE)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_GREEN  = registerBlock("text_color_indicator_block_green",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_AQUA  = registerBlock("text_color_indicator_block_aqua",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_LIGHT_BLUE)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_RED  = registerBlock("text_color_indicator_block_red",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.CRIMSON_NYLIUM)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_LIGHT_PURPLE  = registerBlock("text_color_indicator_block_light_purple",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_MAGENTA)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_YELLOW  = registerBlock("text_color_indicator_block_yellow",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_YELLOW)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_WHITE  = registerBlock("text_color_indicator_block_white",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.SNOW)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MINECOIN_GOLD  = registerBlock("text_color_indicator_block_minecoin_gold",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.GOLD)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_QUARTZ  = registerBlock("text_color_indicator_block_material_quartz",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_IRON  = registerBlock("text_color_indicator_block_material_iron",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.METAL)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_NETHERITE  = registerBlock("text_color_indicator_block_material_netherite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_BLACK)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_REDSTONE  = registerBlock("text_color_indicator_block_material_redstone",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.FIRE)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_COPPER  = registerBlock("text_color_indicator_block_material_copper",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_ORANGE)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_GOLD  = registerBlock("text_color_indicator_block_material_gold",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.GOLD)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_EMERALD  = registerBlock("text_color_indicator_block_material_emerald",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.EMERALD)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_DIAMOND  = registerBlock("text_color_indicator_block_material_diamond",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.DIAMOND)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_LAPIS  = registerBlock("text_color_indicator_block_material_lapis",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.LAPIS)));
     public static final RegistryObject<Block> TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_AMETHYST  = registerBlock("text_color_indicator_block_material_amethyst",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.COLOR_PURPLE)));
 
 
 
