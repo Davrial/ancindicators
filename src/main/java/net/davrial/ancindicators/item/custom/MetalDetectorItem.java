@@ -27,8 +27,9 @@ import java.util.List;
 
 
 
-
+/*
 public class MetalDetectorItem extends Item {
+
     public MetalDetectorItem(Properties pProperties) {
         super(pProperties);
     }
@@ -73,9 +74,11 @@ public class MetalDetectorItem extends Item {
                 "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"));
     }
 
-    /*
+
     private boolean isValuableBlock(BlockState state) {
         return state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
-     */
+
 }
+
+ */
