@@ -1,5 +1,6 @@
-// 1.20.2	2024-04-17T01:43:52.9651951	Tags for minecraft:block mod id ancindicators
-f035178c7a1a6e1e94b15438c594445b4ed25e23 data/ancindicators/tags/blocks/all_indicator_blocks.json
+// 1.20.2	2024-04-17T02:25:11.7401933	Tags for minecraft:block mod id ancindicators
+3188e4c6df9b5a77d9fe0f0238043374a01afc56 data/ancindicators/tags/blocks/advanced_indicator_blocks.json
+1c58e63bbec43e52d94fb5b76705180c6ce5b37a data/ancindicators/tags/blocks/all_indicator_blocks.json
 b79bb497e628faf63b7364c70239cbf364de2c6c data/ancindicators/tags/blocks/alphabetic_indicator_blocks.json
 e68d5c2d9d478310e6488414b989eb23fdf9dcb2 data/ancindicators/tags/blocks/blank_indicator_blocks.json
 87c3b1a6485ac32c673a95effbaeda913b9562cd data/ancindicators/tags/blocks/block_color_indicator_blocks.json
@@ -8,7 +9,7 @@ e68d5c2d9d478310e6488414b989eb23fdf9dcb2 data/ancindicators/tags/blocks/blank_in
 315dab9d4a0b4be6a7c582857c197f38a8f98d65 data/ancindicators/tags/blocks/light_level_indicator_blocks.json
 60311487442d978005457e87d47e427411a0d94c data/ancindicators/tags/blocks/math_numeric_indicator_blocks.json
 2cffa86318d8a37a8edc26fba023c1b90ef7fbc7 data/ancindicators/tags/blocks/misc_numeric_indicator_blocks.json
-f507c881cd4e92d394d90222f739c1d832281146 data/ancindicators/tags/blocks/non_blank_indicator_blocks.json
+b1f590ceda0a1a5c1471f835ae3977a6ab9da7ff data/ancindicators/tags/blocks/non_blank_indicator_blocks.json
 f85fc554d5e3b9208371e336e010523f94b2e8c9 data/ancindicators/tags/blocks/numeric_indicator_blocks.json
 874675019fb5a8fdceebf416d12def2637455535 data/ancindicators/tags/blocks/odd_numeric_indicator_blocks.json
 bf943ecb5a0807e1429679804eb53027acd11746 data/ancindicators/tags/blocks/redstone_indicator_blocks.json

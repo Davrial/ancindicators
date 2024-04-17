@@ -327,9 +327,9 @@ public class ModItems {
 
     //Light Level Items
 
-    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_TEMPLATE_ITEM = ITEMS.register("redstone_indicator_template_item",
+    public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_TEMPLATE_ITEM = ITEMS.register("light_level_indicator_template_item",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BLANK_LIGHT_LEVEL_INDICATOR_ITEM = ITEMS.register("blank_redstone_indicator_item",
+    public static final RegistryObject<Item> BLANK_LIGHT_LEVEL_INDICATOR_ITEM = ITEMS.register("blank_light_level_indicator_item",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LIGHT_LEVEL_INDICATOR_ITEM_0 = ITEMS.register("light_level_indicator_item_0",
             () -> new Item(new Item.Properties()));

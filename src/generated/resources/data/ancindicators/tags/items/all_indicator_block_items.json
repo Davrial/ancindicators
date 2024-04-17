@@ -1,6 +1,7 @@
 {
   "values": [
     "#ancindicators:blank_indicator_block_items",
-    "#ancindicators:non_blank_indicator_block_items"
+    "#ancindicators:non_blank_indicator_block_items",
+    "#ancindicators:advanced_indicator_block_items"
   ]
 }
