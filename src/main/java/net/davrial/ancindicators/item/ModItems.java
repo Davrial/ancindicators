@@ -2,7 +2,7 @@ package net.davrial.ancindicators.item;
 
 import net.davrial.ancindicators.ANCIndicators;
 import net.davrial.ancindicators.item.custom.FuelItem;
-import net.davrial.ancindicators.item.custom.MetalDetectorItem;
+//import net.davrial.ancindicators.item.custom.MetalDetectorItem;
 import net.davrial.ancindicators.item.custom.ModArmorItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;

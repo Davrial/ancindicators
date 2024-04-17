@@ -17,11 +17,12 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ANCIndicators.MOD_ID);
 
+    /*
     public static final RegistryObject<CreativeModeTab> TUTORIAL_TAB = CREATIVE_MODE_TABS.register("tutorial_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.tutorial_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        /*
+
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
 
@@ -76,7 +77,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
-                         */
+
 
 
 
@@ -211,6 +212,8 @@ public class ModCreativeModTabs {
                     })
                     .build()
     );
+
+     */
 
     public static final RegistryObject<CreativeModeTab> ANCINDICATORS_MISC_ITEMS_TAB = CREATIVE_MODE_TABS.register("ancindicators_misc_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PALETTE.get()))
