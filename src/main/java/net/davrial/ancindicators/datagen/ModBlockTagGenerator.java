@@ -25,7 +25,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         //FILL IN BLOCKS HERE
         //FILL IN TAGS HERE
 
-        this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
+        //this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
                 //.add(ModBlocks.SAPPHIRE_ORE.get()).addTag(Tags.Blocks.ORES)
         ;
 
@@ -58,9 +58,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 //.add(ModBlocks.END_STONE_SAPPHIRE_ORE.get())
         ;
 
+        /*
         this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
-                //.add(ModBlocks.SOUND_BLOCK.get())
+                .add(ModBlocks.SOUND_BLOCK.get())
         ;
+        */
 
         this.tag(BlockTags.FENCES)
                 //.add(ModBlocks.SAPPHIRE_FENCE.get())
