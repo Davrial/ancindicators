@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc,",
+  "pattern": [
+    "212",
+    "131",
+    "212"
+  ],
+  "key": {
+    "1": {      "tag": "minecraft:coals"    },
+    "2": {      "tag": "ancindicators:indicator_crafting_materials"    },
+    "3": {      "tag": "ancindicators:base_indicator_crafting_blocks"    }
+  },
+  "result": {    "item": "ancindicators:blank_indicator_block"  }
+}

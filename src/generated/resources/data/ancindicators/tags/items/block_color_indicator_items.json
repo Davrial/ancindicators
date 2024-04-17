@@ -1,0 +1,21 @@
+{
+  "values": [
+    "ancindicators:block_color_indicator_template_item",
+    "ancindicators:block_color_indicator_item_white",
+    "ancindicators:block_color_indicator_item_light_gray",
+    "ancindicators:block_color_indicator_item_gray",
+    "ancindicators:block_color_indicator_item_black",
+    "ancindicators:block_color_indicator_item_brown",
+    "ancindicators:block_color_indicator_item_red",
+    "ancindicators:block_color_indicator_item_orange",
+    "ancindicators:block_color_indicator_item_yellow",
+    "ancindicators:block_color_indicator_item_lime",
+    "ancindicators:block_color_indicator_item_green",
+    "ancindicators:block_color_indicator_item_cyan",
+    "ancindicators:block_color_indicator_item_light_blue",
+    "ancindicators:block_color_indicator_item_blue",
+    "ancindicators:block_color_indicator_item_purple",
+    "ancindicators:block_color_indicator_item_magenta",
+    "ancindicators:block_color_indicator_item_pink"
+  ]
+}

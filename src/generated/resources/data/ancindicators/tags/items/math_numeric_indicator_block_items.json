@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ancindicators:numeric_indicator_block_add",
+    "ancindicators:numeric_indicator_block_subtract",
+    "ancindicators:numeric_indicator_block_multiply",
+    "ancindicators:numeric_indicator_block_divide",
+    "ancindicators:numeric_indicator_block_equals"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc,",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ancindicators:sapphire"
+    }
+  },
+  "result": {
+    "item": "ancindicators:sapphire_block"
+  }
+}

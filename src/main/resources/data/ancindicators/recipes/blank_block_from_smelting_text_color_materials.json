@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 20,
+  "experience": 0.0,
+  "group": "blank_indicator_block",
+  "ingredient":
+    [
+      {        "item": "ancindicators:text_color_indicator_block_minecoin_gold"},
+      {        "item": "ancindicators:text_color_indicator_block_material_quartz"},
+      {        "item": "ancindicators:text_color_indicator_block_material_iron"},
+      {        "item": "ancindicators:text_color_indicator_block_material_netherite"},
+      {        "item": "ancindicators:text_color_indicator_block_material_redstone"},
+      {        "item": "ancindicators:text_color_indicator_block_material_copper"},
+      {        "item": "ancindicators:text_color_indicator_block_material_gold"},
+      {        "item": "ancindicators:text_color_indicator_block_material_emerald"},
+      {        "item": "ancindicators:text_color_indicator_block_material_diamond"},
+      {        "item": "ancindicators:text_color_indicator_block_material_lapis"},
+      {        "item": "ancindicators:text_color_indicator_block_material_amethyst"}
+    ],
+  "result": "ancindicators:blank_indicator_block"
+}

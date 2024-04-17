@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 20,
+  "experience": 0.0,
+  "group": "blank_indicator_block",
+  "ingredient":
+    [
+      {        "item": "ancindicators:block_color_indicator_block_white"},
+      {        "item": "ancindicators:block_color_indicator_block_light_gray"},
+      {        "item": "ancindicators:block_color_indicator_block_gray"},
+      {        "item": "ancindicators:block_color_indicator_block_black"},
+      {        "item": "ancindicators:block_color_indicator_block_brown"},
+      {        "item": "ancindicators:block_color_indicator_block_red"},
+      {        "item": "ancindicators:block_color_indicator_block_orange"},
+      {        "item": "ancindicators:block_color_indicator_block_yellow"},
+      {        "item": "ancindicators:block_color_indicator_block_lime"},
+      {        "item": "ancindicators:block_color_indicator_block_green"},
+      {        "item": "ancindicators:block_color_indicator_block_cyan"},
+      {        "item": "ancindicators:block_color_indicator_block_light_blue"},
+      {        "item": "ancindicators:block_color_indicator_block_blue"},
+      {        "item": "ancindicators:block_color_indicator_block_purple"},
+      {        "item": "ancindicators:block_color_indicator_block_magenta"},
+      {        "item": "ancindicators:block_color_indicator_block_pink"},
+      {        "item": "ancindicators:block_color_indicator_template_block"}
+    ],
+  "result": "ancindicators:blank_indicator_block"
+}

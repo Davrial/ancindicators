@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ancindicators:item/numeric_indicator_template_card"
+  }
+}

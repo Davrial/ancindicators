@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ancindicators:block_color_indicator_block_light_gray"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "ancindicators:blocks/block_color_indicator_block_light_gray"
+}

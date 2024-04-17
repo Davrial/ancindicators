@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ancindicators:block/block_name_here"
+    }
+  }
+}

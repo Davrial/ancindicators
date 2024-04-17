@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ancindicators:block/blank_indicator_block"
+  }
+}

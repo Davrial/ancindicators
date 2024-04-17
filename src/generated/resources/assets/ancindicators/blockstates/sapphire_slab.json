@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancindicators:block/sapphire_slab"
+    },
+    "type=double": {
+      "model": "ancindicators:block/sapphire_block"
+    },
+    "type=top": {
+      "model": "ancindicators:block/sapphire_slab_top"
+    }
+  }
+}

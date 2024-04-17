@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 20,
+  "experience": 0.0,
+  "group": "blank_indicator_block",
+  "ingredient":
+    [
+      {        "item": "ancindicators:numeric_indicator_block_0"},
+      {        "item": "ancindicators:numeric_indicator_block_1"},
+      {        "item": "ancindicators:numeric_indicator_block_2"},
+      {        "item": "ancindicators:numeric_indicator_block_3"},
+      {        "item": "ancindicators:numeric_indicator_block_4"},
+      {        "item": "ancindicators:numeric_indicator_block_5"},
+      {        "item": "ancindicators:numeric_indicator_block_6"},
+      {        "item": "ancindicators:numeric_indicator_block_7"},
+      {        "item": "ancindicators:numeric_indicator_block_8"},
+      {        "item": "ancindicators:numeric_indicator_block_9"},
+      {        "item": "ancindicators:numeric_indicator_block_10"},
+      {        "item": "ancindicators:numeric_indicator_block_11"},
+      {        "item": "ancindicators:numeric_indicator_block_12"},
+      {        "item": "ancindicators:numeric_indicator_block_13"},
+      {        "item": "ancindicators:numeric_indicator_block_14"},
+      {        "item": "ancindicators:numeric_indicator_block_15"},
+      {        "item": "ancindicators:numeric_indicator_block_16"},
+      {        "item": "ancindicators:numeric_indicator_block_32"},
+      {        "item": "ancindicators:numeric_indicator_block_64"},
+      {        "item": "ancindicators:numeric_indicator_block_1000"},
+      {        "item": "ancindicators:numeric_indicator_block_even"},
+      {        "item": "ancindicators:numeric_indicator_block_odd"},
+      {        "item": "ancindicators:numeric_indicator_block_infinity"},
+      {        "item": "ancindicators:numeric_indicator_template_block"}
+    ],
+  "result": "ancindicators:blank_indicator_block"
+}

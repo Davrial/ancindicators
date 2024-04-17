@@ -1,0 +1,33 @@
+{
+  "values": [
+    "ancindicators:numeric_indicator_template_item",
+    "ancindicators:numeric_indicator_item_0",
+    "ancindicators:numeric_indicator_item_1",
+    "ancindicators:numeric_indicator_item_2",
+    "ancindicators:numeric_indicator_item_3",
+    "ancindicators:numeric_indicator_item_4",
+    "ancindicators:numeric_indicator_item_5",
+    "ancindicators:numeric_indicator_item_6",
+    "ancindicators:numeric_indicator_item_7",
+    "ancindicators:numeric_indicator_item_8",
+    "ancindicators:numeric_indicator_item_9",
+    "ancindicators:numeric_indicator_item_10",
+    "ancindicators:numeric_indicator_item_11",
+    "ancindicators:numeric_indicator_item_12",
+    "ancindicators:numeric_indicator_item_13",
+    "ancindicators:numeric_indicator_item_14",
+    "ancindicators:numeric_indicator_item_15",
+    "ancindicators:numeric_indicator_item_16",
+    "ancindicators:numeric_indicator_item_32",
+    "ancindicators:numeric_indicator_item_64",
+    "ancindicators:numeric_indicator_item_1000",
+    "ancindicators:numeric_indicator_item_even",
+    "ancindicators:numeric_indicator_item_odd",
+    "ancindicators:numeric_indicator_item_infinity",
+    "ancindicators:numeric_indicator_item_add",
+    "ancindicators:numeric_indicator_item_subtract",
+    "ancindicators:numeric_indicator_item_multiply",
+    "ancindicators:numeric_indicator_item_divide",
+    "ancindicators:numeric_indicator_item_equals"
+  ]
+}

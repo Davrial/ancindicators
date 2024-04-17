@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "item": "ancindicators:darkened_blank_indicator_block"    },
+    [     {"item": "minecraft:book"},
+          {"item": "minecraft:paper"},
+          {"item": "minecraft:writable_book"},
+          {"item": "minecraft:bookshelf"},
+          {"tag": "minecraft:signs"},
+          {"tag": "minecraft:hanging_signs"}
+    ],
+    {     "item": "minecraft:red_dye"},
+    {     "item": "minecraft:green_dye"},
+    {     "item": "minecraft:blue_dye"},
+    {     "item": "minecraft:yellow_dye"}
+  ],
+  "result": {    "item": "ancindicators:text_color_indicator_template_block_darkened"  }
+}

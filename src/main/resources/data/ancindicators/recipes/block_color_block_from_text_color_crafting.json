@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "item": "ancindicators:text_color_indicator_template_block"    },
+    [     {"item": "minecraft:white_wool"},
+          {"item": "minecraft:terracotta"},
+          {"item": "minecraft:white_concrete_powder"},
+          {"item": "minecraft:white_concrete"},
+          {"item": "minecraft:glass"}
+    ],
+    [     {"item": "minecraft:white_dye"}, {     "item": "minecraft:bone_meal"}]
+  ],
+  "result": {    "item": "ancindicators:block_color_indicator_template_block",  "count": 2  }
+}

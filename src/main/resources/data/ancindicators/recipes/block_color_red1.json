@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "item": "ancindicators:block_color_indicator_template_block"    },
+    {      "item": "minecraft:red_dye"    }
+  ],
+  "result": {    "item": "ancindicators:block_color_indicator_block_red"  }
+}

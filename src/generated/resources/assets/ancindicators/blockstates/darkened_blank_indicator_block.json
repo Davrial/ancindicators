@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ancindicators:block/darkened_blank_indicator_block"
+    }
+  }
+}

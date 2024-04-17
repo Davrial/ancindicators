@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ancindicators:item/text_color_indicator_item_yellow"
+  }
+}

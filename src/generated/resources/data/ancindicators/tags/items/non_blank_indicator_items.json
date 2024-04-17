@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ancindicators:alphabetic_indicator_template_item",
+    "ancindicators:numeric_indicator_template_item",
+    "ancindicators:block_color_indicator_template_item",
+    "ancindicators:text_color_indicator_template_item",
+    "ancindicators:text_color_indicator_template_item_darkened"
+  ]
+}

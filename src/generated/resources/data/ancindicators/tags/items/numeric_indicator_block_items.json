@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#ancindicators:misc_numeric_indicator_block_items",
+    "#ancindicators:odd_numeric_indicator_block_items",
+    "#ancindicators:even_numeric_indicator_block_items",
+    "#ancindicators:math_numeric_indicator_block_items"
+  ]
+}

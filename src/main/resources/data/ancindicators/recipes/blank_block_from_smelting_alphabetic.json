@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 20,
+  "experience": 0.0,
+  "group": "blank_indicator_block",
+  "ingredient":
+    [
+      {        "item": "ancindicators:alphabetic_indicator_block_a"},
+      {        "item": "ancindicators:alphabetic_indicator_block_b"},
+      {        "item": "ancindicators:alphabetic_indicator_block_c"},
+      {        "item": "ancindicators:alphabetic_indicator_block_d"},
+      {        "item": "ancindicators:alphabetic_indicator_block_e"},
+      {        "item": "ancindicators:alphabetic_indicator_block_f"},
+      {        "item": "ancindicators:alphabetic_indicator_block_g"},
+      {        "item": "ancindicators:alphabetic_indicator_block_h"},
+      {        "item": "ancindicators:alphabetic_indicator_block_i"},
+      {        "item": "ancindicators:alphabetic_indicator_block_j"},
+      {        "item": "ancindicators:alphabetic_indicator_block_k"},
+      {        "item": "ancindicators:alphabetic_indicator_block_l"},
+      {        "item": "ancindicators:alphabetic_indicator_block_m"},
+      {        "item": "ancindicators:alphabetic_indicator_block_n"},
+      {        "item": "ancindicators:alphabetic_indicator_block_o"},
+      {        "item": "ancindicators:alphabetic_indicator_block_p"},
+      {        "item": "ancindicators:alphabetic_indicator_block_q"},
+      {        "item": "ancindicators:alphabetic_indicator_block_r"},
+      {        "item": "ancindicators:alphabetic_indicator_block_s"},
+      {        "item": "ancindicators:alphabetic_indicator_block_t"},
+      {        "item": "ancindicators:alphabetic_indicator_block_u"},
+      {        "item": "ancindicators:alphabetic_indicator_block_v"},
+      {        "item": "ancindicators:alphabetic_indicator_block_w"},
+      {        "item": "ancindicators:alphabetic_indicator_block_x"},
+      {        "item": "ancindicators:alphabetic_indicator_block_y"},
+      {        "item": "ancindicators:alphabetic_indicator_block_z"},
+      {        "item": "ancindicators:alphabetic_indicator_template_block"}
+    ],
+  "result": "ancindicators:blank_indicator_block"
+}

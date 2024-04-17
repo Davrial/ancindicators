@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "item": "minecraft:sponge"    },
+    {      "item": "minecraft:white_wool"    }
+  ],
+  "result": {    "item": "ancindicators:eraser", "count":  2}
+}

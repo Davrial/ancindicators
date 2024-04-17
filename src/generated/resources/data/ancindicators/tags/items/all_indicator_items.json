@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#ancindicators:non_blank_indicator_items",
+    "#ancindicators:alphabetic_indicator_items",
+    "#ancindicators:numeric_indicator_items",
+    "#ancindicators:block_color_indicator_items",
+    "#ancindicators:text_color_indicator_items",
+    "ancindicators:blank_indicator_item",
+    "ancindicators:darkened_blank_indicator_item"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "tag": "ancindicators:alphabetic_indicator_block_items"    },
+    [{      "item": "minecraft:paper"    }, {"item": "minecraft:book"    }],
+    {      "tag": "ancindicators:letter_c"    }
+  ],
+    "result": {    "item": "ancindicators:alphabetic_indicator_block_c", "count" : 2    }
+}

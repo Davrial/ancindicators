@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ancindicators:text_color_indicator_block_material_quartz"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "ancindicators:blocks/text_color_indicator_block_material_quartz"
+}

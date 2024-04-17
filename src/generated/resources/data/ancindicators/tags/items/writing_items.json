@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:book",
+    "minecraft:bookshelf",
+    "minecraft:writable_book",
+    "minecraft:paper",
+    "#minecraft:signs",
+    "#minecraft:hanging_signs"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "tag": "ancindicators:even_numeric_indicator_block_items"    },
+      {        "item": "ancindicators:numeric_indicator_block_equals"      }
+  ],
+    "result": {    "item": "ancindicators:numeric_indicator_block_even", "count" : 2  }
+}

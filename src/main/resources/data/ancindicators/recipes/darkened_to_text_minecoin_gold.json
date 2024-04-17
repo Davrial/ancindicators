@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "item": "ancindicators:darkened_blank_indicator_block"    },
+    {      "item": "minecraft:gold_nugget"    }
+  ],
+  "result": {    "item": "ancindicators:text_color_indicator_block_minecoin_gold"  }
+}

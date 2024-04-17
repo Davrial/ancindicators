@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ancindicators:block/text_color_indicator_template_block_darkened"
+  }
+}

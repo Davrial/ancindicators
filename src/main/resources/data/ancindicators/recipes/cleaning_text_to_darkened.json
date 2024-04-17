@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "item": "ancindicators:eraser"    },
+               {"tag": "ancindicators:text_color_indicator_block_items_dark"}
+  ],
+  "result": {    "item": "ancindicators:darkened_blank_indicator_block"  }
+}

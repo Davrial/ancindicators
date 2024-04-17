@@ -1,0 +1,16 @@
+{
+  "values": [
+    "ancindicators:numeric_indicator_block_2",
+    "ancindicators:numeric_indicator_block_4",
+    "ancindicators:numeric_indicator_block_6",
+    "ancindicators:numeric_indicator_block_8",
+    "ancindicators:numeric_indicator_block_10",
+    "ancindicators:numeric_indicator_block_12",
+    "ancindicators:numeric_indicator_block_14",
+    "ancindicators:numeric_indicator_block_16",
+    "ancindicators:numeric_indicator_block_32",
+    "ancindicators:numeric_indicator_block_64",
+    "ancindicators:numeric_indicator_block_1000",
+    "ancindicators:numeric_indicator_block_even"
+  ]
+}
