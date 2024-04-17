@@ -1,12 +1,5 @@
 {
   "values": [
-    "ancindicators:sapphire_block",
-    "ancindicators:raw_sapphire_block",
-    "ancindicators:sapphire_ore",
-    "ancindicators:deepslate_sapphire_ore",
-    "ancindicators:nether_sapphire_ore",
-    "ancindicators:end_stone_sapphire_ore",
-    "ancindicators:sound_block",
     "#ancindicators:all_indicator_blocks"
   ]
 }

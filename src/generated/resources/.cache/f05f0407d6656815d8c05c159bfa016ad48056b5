@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-16T19:50:24.4059747	Tags for minecraft:item mod id ancindicators
+// 1.20.2	2024-04-16T20:39:54.8679716	Tags for minecraft:item mod id ancindicators
 0d20efd49e4b38914cff132b3711270ea60368d1 data/ancindicators/tags/items/all_indicator_block_items.json
 02aff3f7511119c74135d59b60c1b71452a881f2 data/ancindicators/tags/items/all_indicator_items.json
 b79bb497e628faf63b7364c70239cbf364de2c6c data/ancindicators/tags/items/alphabetic_indicator_block_items.json
@@ -29,4 +29,3 @@ a4982317c4f807837768b3179b7676dc1fc0c161 data/ancindicators/tags/items/text_colo
 0496671233e362b57703d446ba6e6bc9518b3692 data/ancindicators/tags/items/text_color_indicator_block_items_dark.json
 6d09648f9988261d1d8b52a903289081b680b5fe data/ancindicators/tags/items/text_color_indicator_items.json
 b815542c9e14a8a3df95397bfd86e28782f19701 data/ancindicators/tags/items/writing_items.json
-c9e9aa58b92711ca9055225eabea92cf3bb7b3aa data/minecraft/tags/items/trimmable_armor.json
