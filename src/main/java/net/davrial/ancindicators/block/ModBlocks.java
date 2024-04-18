@@ -17,6 +17,7 @@ import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock12;
 import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock13;
 import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock14;
 import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock15;
+import net.davrial.ancindicators.block.custom.WeakRedstoneIndicatorBlock15;
 import net.davrial.ancindicators.block.custom.SoundBlock;
 import net.davrial.ancindicators.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
@@ -208,7 +209,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_14  = registerBlock("numeric_indicator_block_14",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_15  = registerBlock("numeric_indicator_block_15",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
+            () -> new WeakRedstoneIndicatorBlock15(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_16  = registerBlock("numeric_indicator_block_16",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> NUMERIC_INDICATOR_BLOCK_32  = registerBlock("numeric_indicator_block_32",

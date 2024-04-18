@@ -152,8 +152,18 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 )
         ;
 
+        this.tag(ModTags.Items.ERASABLE_TO_BLANK_ITEMS)
+                .addTag(ModTags.Items.ALPHABETIC_INDICATOR_ITEMS)
+                .addTag(ModTags.Items.NUMERIC_INDICATOR_ITEMS)
+                .addTag(ModTags.Items.BLOCK_COLOR_INDICATOR_ITEMS)
+                .add(ModItems.TEXT_COLOR_INDICATOR_TEMPLATE_ITEM.get(),
+                        ModItems.DARKENED_BLANK_INDICATOR_ITEM.get()
+                        )
+        ;
+
         this.tag(ModTags.Items.TEXT_COLOR_INDICATOR_ITEMS)
                 .add(ModItems.TEXT_COLOR_INDICATOR_TEMPLATE_ITEM.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_TEMPLATE_ITEM_DARKENED.get(),
                         ModItems.TEXT_COLOR_INDICATOR_ITEM_BLACK.get(),
                         ModItems.TEXT_COLOR_INDICATOR_ITEM_DARK_BLUE.get(),
                         ModItems.TEXT_COLOR_INDICATOR_ITEM_DARK_GREEN.get(),
@@ -185,7 +195,40 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 )
         ;
 
-        this.tag(ModTags.Items.REDSTONE_INDICATOR_ITEMS)
+        this.tag(ModTags.Items.ERASABLE_TO_DARKENED_ITEMS)
+                .add(ModItems.TEXT_COLOR_INDICATOR_TEMPLATE_ITEM_DARKENED.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_BLACK.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_DARK_BLUE.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_DARK_GREEN.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_DARK_AQUA.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_DARK_RED.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_DARK_PURPLE.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_GOLD.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_GRAY.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_DARK_GRAY.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_BLUE.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_GREEN.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_AQUA.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_RED.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_RED.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_LIGHT_PURPLE.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_YELLOW.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_WHITE.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MINECOIN_GOLD.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_QUARTZ.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_IRON.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_NETHERITE.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_REDSTONE.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_COPPER.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_GOLD.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_EMERALD.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_DIAMOND.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_LAPIS.get(),
+                        ModItems.TEXT_COLOR_INDICATOR_ITEM_MATERIAL_AMETHYST.get()
+                )
+        ;
+
+        this.tag(ModTags.Items.ERASABLE_TO_REDSTONE_LEVEL_ITEMS)
                 .add(ModItems.REDSTONE_INDICATOR_ITEM_0.get(),
                         ModItems.REDSTONE_INDICATOR_ITEM_1.get(),
                         ModItems.REDSTONE_INDICATOR_ITEM_2.get(),
@@ -204,6 +247,27 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.REDSTONE_INDICATOR_ITEM_15.get(),
                         ModItems.REDSTONE_INDICATOR_TEMPLATE_ITEM.get(),
                         ModItems.BLANK_REDSTONE_INDICATOR_ITEM.get()
+                )
+        ;
+
+        this.tag(ModTags.Items.REDSTONE_INDICATOR_ITEMS)
+                .add(ModItems.REDSTONE_INDICATOR_ITEM_0.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_1.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_2.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_3.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_4.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_5.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_6.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_7.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_8.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_9.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_10.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_11.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_12.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_13.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_14.get(),
+                        ModItems.REDSTONE_INDICATOR_ITEM_15.get(),
+                        ModItems.REDSTONE_INDICATOR_TEMPLATE_ITEM.get()
                 )
         ;
 
@@ -229,7 +293,43 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 )
         ;
 
+        this.tag(ModTags.Items.ERASABLE_TO_LIGHT_LEVEL_ITEMS)
+                .add(ModItems.LIGHT_LEVEL_INDICATOR_ITEM_0.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_1.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_2.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_3.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_4.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_5.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_6.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_7.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_8.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_9.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_10.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_11.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_12.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_13.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_14.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_ITEM_15.get(),
+                        ModItems.LIGHT_LEVEL_INDICATOR_TEMPLATE_ITEM.get()
+                )
+        ;
 
+        this.tag(ModTags.Items.ERASABLE_TO_PLAIN_REDSTONE_ITEMS)
+                .add(ModItems.BLANK_REDSTONE_INDICATOR_ITEM.get())
+        ;
+
+        this.tag(ModTags.Items.ERASABLE_TO_PLAIN_GLOWSTONE_ITEMS)
+                .add(ModItems.BLANK_LIGHT_LEVEL_INDICATOR_ITEM.get())
+        ;
+
+        this.tag(ModTags.Items.ALL_ERASABLE_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_BLANK_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_DARKENED_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_REDSTONE_LEVEL_ITEMS)
+                .addTag(ModTags.Items.LIGHT_LEVEL_INDICATOR_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_PLAIN_REDSTONE_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_PLAIN_GLOWSTONE_BLOCK_ITEMS)
+        ;
 
         this.copy(ModTags.Blocks.BLANK_INDICATOR_BLOCKS, ModTags.Items.BLANK_INDICATOR_BLOCK_ITEMS);
         this.copy(ModTags.Blocks.ALPHABETIC_INDICATOR_BLOCKS, ModTags.Items.ALPHABETIC_INDICATOR_BLOCK_ITEMS);
@@ -242,6 +342,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.copy(ModTags.Blocks.TEXT_COLOR_INDICATOR_BLOCKS_DARK, ModTags.Items.TEXT_COLOR_INDICATOR_BLOCK_ITEMS_DARK);
         this.copy(ModTags.Blocks.REDSTONE_INDICATOR_BLOCKS, ModTags.Items.REDSTONE_INDICATOR_BLOCK_ITEMS);
         this.copy(ModTags.Blocks.LIGHT_LEVEL_INDICATOR_BLOCKS, ModTags.Items.LIGHT_LEVEL_INDICATOR_BLOCK_ITEMS);
+        this.copy(ModTags.Blocks.ERASABLE_TO_PLAIN_REDSTONE_BLOCKS, ModTags.Items.ERASABLE_TO_PLAIN_REDSTONE_BLOCK_ITEMS);
+        this.copy(ModTags.Blocks.ERASABLE_TO_PLAIN_GLOWSTONE_BLOCKS, ModTags.Items.ERASABLE_TO_PLAIN_GLOWSTONE_BLOCK_ITEMS);
+
+        //Erasable Blocks to Block Items
+        this.copy(ModTags.Blocks.ERASABLE_TO_BLANK_BLOCKS, ModTags.Items.ERASABLE_TO_BLANK_BLOCK_ITEMS);
+        this.copy(ModTags.Blocks.ERASABLE_TO_DARKENED_BLOCKS, ModTags.Items.ERASABLE_TO_DARKENED_BLOCK_ITEMS);
+        this.copy(ModTags.Blocks.ERASABLE_TO_REDSTONE_LEVEL_BLOCKS, ModTags.Items.ERASABLE_TO_REDSTONE_LEVEL_BLOCK_ITEMS);
+        this.copy(ModTags.Blocks.ERASABLE_TO_LIGHT_LEVEL_BLOCKS, ModTags.Items.ERASABLE_TO_LIGHT_LEVEL_BLOCK_ITEMS);
+        this.copy(ModTags.Blocks.ERASABLE_TO_PLAIN_REDSTONE_BLOCKS, ModTags.Items.ERASABLE_TO_PLAIN_REDSTONE_BLOCK_ITEMS);
+        this.copy(ModTags.Blocks.ERASABLE_TO_PLAIN_GLOWSTONE_BLOCKS, ModTags.Items.ERASABLE_TO_PLAIN_GLOWSTONE_BLOCK_ITEMS);
 
         this.tag(ModTags.Items.ALL_INDICATOR_BLOCK_ITEMS)
                 .addTag(ModTags.Items.BLANK_INDICATOR_BLOCK_ITEMS)
@@ -277,6 +387,33 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.REDSTONE_INDICATOR_BLOCK_ITEMS);
         this.tag(ModTags.Items.LIGHT_LEVEL_INDICATOR_BLOCK_ITEMS);
 
+        //Erasable Block Items
+        this.tag(ModTags.Items.ALL_ERASABLE_BLOCK_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_BLANK_BLOCK_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_DARKENED_BLOCK_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_REDSTONE_LEVEL_BLOCK_ITEMS)
+                .addTag(ModTags.Items.LIGHT_LEVEL_INDICATOR_BLOCK_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_PLAIN_REDSTONE_BLOCK_ITEMS)
+                .addTag(ModTags.Items.ERASABLE_TO_PLAIN_GLOWSTONE_BLOCK_ITEMS)
+        ;
+        this.tag(ModTags.Items.ERASABLE_TO_BLANK_ITEMS);
+        this.tag(ModTags.Items.ERASABLE_TO_DARKENED_BLOCK_ITEMS);
+        this.tag(ModTags.Items.ERASABLE_TO_REDSTONE_LEVEL_BLOCK_ITEMS);
+        this.tag(ModTags.Items.ERASABLE_TO_LIGHT_LEVEL_BLOCK_ITEMS);
+        this.tag(ModTags.Items.ERASABLE_TO_PLAIN_REDSTONE_BLOCK_ITEMS);
+        this.tag(ModTags.Items.ERASABLE_TO_PLAIN_GLOWSTONE_BLOCK_ITEMS);
+
+
+        //Combined Supertags
+        this.tag(ModTags.Items.ALL_INDICATORS)
+                .addTag(ModTags.Items.ALL_INDICATOR_BLOCK_ITEMS)
+                .addTag(ModTags.Items.ALL_INDICATOR_ITEMS)
+        ;
+        this.tag(ModTags.Items.ALL_ERASABLES)
+                .addTag(ModTags.Items.ALL_ERASABLE_BLOCK_ITEMS)
+                .addTag(ModTags.Items.ALL_ERASABLE_ITEMS)
+        ;
+
 
 
 
@@ -311,6 +448,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.PALETTE.get(),
                         ModItems.PALETTE_BLOCKS.get(),
                         ModItems.PALETTE_TEXT.get()
+                )
+        ;
+
+        this.tag(ModTags.Items.ERASERS)
+                .add(   ModItems.ERASER.get(),
+                        ModItems.MAGIC_ERASER.get()
                 )
         ;
 

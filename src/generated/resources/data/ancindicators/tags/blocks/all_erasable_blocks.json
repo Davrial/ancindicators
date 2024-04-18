@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#ancindicators:erasable_to_blank_blocks",
+    "#ancindicators:erasable_to_darkened_blocks",
+    "#ancindicators:erasable_to_redstone_level_blocks",
+    "#ancindicators:erasable_to_light_level_blocks",
+    "#ancindicators:erasable_to_plain_redstone_blocks",
+    "#ancindicators:erasable_to_plain_glowstone_blocks"
+  ]
+}

@@ -95,6 +95,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         //Misc Items
         handheldItem(ModItems.ERASER);
+        handheldItem(ModItems.MAGIC_ERASER);
         handheldItem(ModItems.PALETTE);
         handheldItem(ModItems.PALETTE_BLOCKS);
         handheldItem(ModItems.PALETTE_TEXT);

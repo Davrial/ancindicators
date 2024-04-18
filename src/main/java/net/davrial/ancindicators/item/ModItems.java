@@ -1,9 +1,9 @@
 package net.davrial.ancindicators.item;
 
 import net.davrial.ancindicators.ANCIndicators;
-import net.davrial.ancindicators.item.custom.FuelItem;
+import net.davrial.ancindicators.item.custom.Eraser1Item;
+import net.davrial.ancindicators.item.custom.Eraser2Item;
 //import net.davrial.ancindicators.item.custom.MetalDetectorItem;
-import net.davrial.ancindicators.item.custom.ModArmorItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -75,7 +75,9 @@ public class ModItems {
 
     //Misc Items
     public static final RegistryObject<Item> ERASER = ITEMS.register("eraser",
-            () -> new Item(new Item.Properties()));
+            () -> new Eraser1Item());
+    public static final RegistryObject<Item> MAGIC_ERASER = ITEMS.register("magic_eraser",
+            () -> new Eraser2Item());
     public static final RegistryObject<Item> PALETTE = ITEMS.register("palette",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PALETTE_BLOCKS = ITEMS.register("palette_blocks",

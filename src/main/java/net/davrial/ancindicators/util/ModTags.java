@@ -33,6 +33,15 @@ public class ModTags {
         public static final TagKey<Block> LIGHT_LEVEL_INDICATOR_BLOCKS = tag("light_level_indicator_blocks");
         public static final TagKey<Block> ADVANCED_INDICATOR_BLOCKS = tag("advanced_indicator_blocks");
 
+        //Erasable Block Tags
+        public static final TagKey<Block> ALL_ERASABLE_BLOCKS = tag("all_erasable_blocks");
+        public static final TagKey<Block> ERASABLE_TO_BLANK_BLOCKS = tag("erasable_to_blank_blocks");
+        public static final TagKey<Block> ERASABLE_TO_DARKENED_BLOCKS = tag("erasable_to_darkened_blocks");
+        public static final TagKey<Block> ERASABLE_TO_REDSTONE_LEVEL_BLOCKS = tag("erasable_to_redstone_level_blocks");
+        public static final TagKey<Block> ERASABLE_TO_LIGHT_LEVEL_BLOCKS = tag("erasable_to_light_level_blocks");
+        public static final TagKey<Block> ERASABLE_TO_PLAIN_REDSTONE_BLOCKS = tag("erasable_to_plain_redstone_blocks");
+        public static final TagKey<Block> ERASABLE_TO_PLAIN_GLOWSTONE_BLOCKS = tag("erasable_to_plain_glowstone_blocks");
+
 
 
         private static TagKey<Block> tag(String name) {
@@ -73,11 +82,40 @@ public class ModTags {
         public static final TagKey<Item> ADVANCED_INDICATOR_BLOCK_ITEMS = tag("advanced_indicator_block_items");
         public static final TagKey<Item> INDICATOR_DARKENING_ITEMS = tag("indicator_darkening_items");
         public static final TagKey<Item> INDICATOR_DARKENING_ITEMS_WITH_DYES = tag("indicator_darkening_items_with_dyes");
+
+        //Erasable Block Item Tags
+        public static final TagKey<Item> ALL_ERASABLE_BLOCK_ITEMS = tag("all_erasable_block_items");
+        public static final TagKey<Item> ERASABLE_TO_BLANK_BLOCK_ITEMS = tag("erasable_to_blank_block_items");
+        public static final TagKey<Item> ERASABLE_TO_DARKENED_BLOCK_ITEMS = tag("erasable_to_darkened_block_items");
+        public static final TagKey<Item> ERASABLE_TO_REDSTONE_LEVEL_BLOCK_ITEMS = tag("erasable_to_redstone_level_block_items");
+        public static final TagKey<Item> ERASABLE_TO_LIGHT_LEVEL_BLOCK_ITEMS = tag("erasable_to_light_level_block_items");
+        public static final TagKey<Item> ERASABLE_TO_PLAIN_REDSTONE_BLOCK_ITEMS = tag("erasable_to_plain_redstone_block_items");
+        public static final TagKey<Item> ERASABLE_TO_PLAIN_GLOWSTONE_BLOCK_ITEMS = tag("erasable_to_plain_glowstone_block_items");
+
+        //Erasable Item Tags
+        public static final TagKey<Item> ALL_ERASABLE_ITEMS = tag("all_erasable_items");
+        public static final TagKey<Item> ERASABLE_TO_BLANK_ITEMS = tag("erasable_to_blank_items");
+        public static final TagKey<Item> ERASABLE_TO_DARKENED_ITEMS = tag("erasable_to_darkened_items");
+        public static final TagKey<Item> ERASABLE_TO_REDSTONE_LEVEL_ITEMS = tag("erasable_to_redstone_level_items");
+        public static final TagKey<Item> ERASABLE_TO_LIGHT_LEVEL_ITEMS = tag("erasable_to_light_level_items");
+        public static final TagKey<Item> ERASABLE_TO_PLAIN_REDSTONE_ITEMS = tag("erasable_to_plain_redstone_items");
+        public static final TagKey<Item> ERASABLE_TO_PLAIN_GLOWSTONE_ITEMS = tag("erasable_to_plain_glowstone_items");
+
+        //Block Item + Item Supertags
+        public static final TagKey<Item> ALL_INDICATORS = tag("all_indicators");
+        public static final TagKey<Item> ALL_ERASABLES = tag("all_erasables");
+
+
+
+        //Misc Item Tags
         public static final TagKey<Item> WRITING_ITEMS = tag("writing_items");
         public static final TagKey<Item> BASE_INDICATOR_CRAFTING_BLOCKS = tag("base_indicator_crafting_blocks");
         public static final TagKey<Item> BETTER_INDICATOR_CRAFTING_BLOCKS = tag("better_indicator_crafting_blocks");
         public static final TagKey<Item> INDICATOR_CRAFTING_ITEMS = tag("indicator_crafting_materials");
         public static final TagKey<Item> MISC_ANCINDICATOR_ITEMS = tag("misc_ancindicator_items");
+        public static final TagKey<Item> ERASERS = tag("erasers");
+
+        //Letters
         public static final TagKey<Item> LETTER_A = tag("letter_a");
         public static final TagKey<Item> LETTER_B = tag("letter_b");
         public static final TagKey<Item> LETTER_C = tag("letter_c");

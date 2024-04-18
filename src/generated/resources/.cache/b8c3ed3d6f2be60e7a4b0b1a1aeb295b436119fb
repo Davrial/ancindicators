@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-17T02:25:11.7372012	Item Models: ancindicators
+// 1.20.2	2024-04-18T08:06:10.8378672	Item Models: ancindicators
 7cf7931835a7cccef6dcf1963342fc0cfd04744c assets/ancindicators/models/item/alphabetic_indicator_item_a.json
 ad9a3e1ffc8a4f8213216f05b11a6b45820ac673 assets/ancindicators/models/item/alphabetic_indicator_item_b.json
 a57c330eb733705987aebeb932dfc5c982e83161 assets/ancindicators/models/item/alphabetic_indicator_item_c.json
@@ -65,6 +65,7 @@ dd7169107a7339eea29bd8d799db05fc5b0d0539 assets/ancindicators/models/item/light_
 85574f933595795cabcda50e150e05be14b0ad71 assets/ancindicators/models/item/light_level_indicator_item_8.json
 822ac0673803561e6532e247419b65f1599ea881 assets/ancindicators/models/item/light_level_indicator_item_9.json
 d6524174ee5557e387eae2b9db94f4f368732738 assets/ancindicators/models/item/light_level_indicator_template_item.json
+79c444119af5216c560080a805b23113eee1e4a8 assets/ancindicators/models/item/magic_eraser.json
 e47fd1c89bdf6c6383494996cbbf5942d29339d8 assets/ancindicators/models/item/numeric_indicator_item_0.json
 bb35c4503ae3c24560a7cad3dde99be9ec833e8a assets/ancindicators/models/item/numeric_indicator_item_1.json
 11a1a94ee1bd2ab289e435fcca6c5e76199c6e50 assets/ancindicators/models/item/numeric_indicator_item_10.json

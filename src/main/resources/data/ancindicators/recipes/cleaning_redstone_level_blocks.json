@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "tag": "ancindicators:erasers"    },
+    {      "tag": "ancindicators:erasable_to_redstone_level_block_items"}
+  ],
+  "result": {    "item": "ancindicators:blank_redstone_indicator_block"  }
+}

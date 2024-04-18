@@ -1,0 +1,32 @@
+{
+  "values": [
+    "ancindicators:text_color_indicator_block_black",
+    "ancindicators:text_color_indicator_block_dark_blue",
+    "ancindicators:text_color_indicator_block_dark_green",
+    "ancindicators:text_color_indicator_block_dark_aqua",
+    "ancindicators:text_color_indicator_block_dark_red",
+    "ancindicators:text_color_indicator_block_dark_purple",
+    "ancindicators:text_color_indicator_block_gold",
+    "ancindicators:text_color_indicator_block_gray",
+    "ancindicators:text_color_indicator_block_dark_gray",
+    "ancindicators:text_color_indicator_block_blue",
+    "ancindicators:text_color_indicator_block_green",
+    "ancindicators:text_color_indicator_block_aqua",
+    "ancindicators:text_color_indicator_block_red",
+    "ancindicators:text_color_indicator_block_light_purple",
+    "ancindicators:text_color_indicator_block_yellow",
+    "ancindicators:text_color_indicator_block_white",
+    "ancindicators:text_color_indicator_block_minecoin_gold",
+    "ancindicators:text_color_indicator_block_material_quartz",
+    "ancindicators:text_color_indicator_block_material_iron",
+    "ancindicators:text_color_indicator_block_material_netherite",
+    "ancindicators:text_color_indicator_block_material_redstone",
+    "ancindicators:text_color_indicator_block_material_copper",
+    "ancindicators:text_color_indicator_block_material_gold",
+    "ancindicators:text_color_indicator_block_material_emerald",
+    "ancindicators:text_color_indicator_block_material_diamond",
+    "ancindicators:text_color_indicator_block_material_lapis",
+    "ancindicators:text_color_indicator_block_material_amethyst",
+    "ancindicators:text_color_indicator_template_block_darkened"
+  ]
+}

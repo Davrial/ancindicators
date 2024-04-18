@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {      "item": "ancindicators:eraser"    },
+    {      "item": "minecraft:lapis_lazuli"      },
+    {      "item": "minecraft:bone_meal"      },
+    {      "item": "minecraft:enchanted_book"            }
+  ],
+  "result": {    "item": "ancindicators:magic_eraser"}
+}

@@ -219,14 +219,9 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PALETTE.get()))
                     .title(Component.translatable("creativetab.ancindicators_misc_items_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        //Main Items
-                        pOutput.accept(ModItems.BLANK_INDICATOR_ITEM.get());
-                        pOutput.accept(ModItems.DARKENED_BLANK_INDICATOR_ITEM.get());
-                        pOutput.accept(ModItems.ALPHABETIC_INDICATOR_TEMPLATE_ITEM.get());
-                        pOutput.accept(ModItems.NUMERIC_INDICATOR_TEMPLATE_ITEM.get());
-                        pOutput.accept(ModItems.BLOCK_COLOR_INDICATOR_TEMPLATE_ITEM.get());
-                        pOutput.accept(ModItems.TEXT_COLOR_INDICATOR_TEMPLATE_ITEM.get());
+                        //Misc Items
                         pOutput.accept(ModItems.ERASER.get());
+                        pOutput.accept(ModItems.MAGIC_ERASER.get());
                         pOutput.accept(ModItems.PALETTE.get());
                         pOutput.accept(ModItems.PALETTE_BLOCKS.get());
                         pOutput.accept(ModItems.PALETTE_TEXT.get());

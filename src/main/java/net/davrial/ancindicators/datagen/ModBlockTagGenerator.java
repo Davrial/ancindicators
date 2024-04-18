@@ -275,6 +275,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED.get()
                 )
         ;
+
         this.tag(ModTags.Blocks.REDSTONE_INDICATOR_BLOCKS)
                 .add(ModBlocks.REDSTONE_INDICATOR_BLOCK_0.get(),
                     ModBlocks.REDSTONE_INDICATOR_BLOCK_1.get(),
@@ -318,5 +319,174 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK.get()
                 )
         ;
+
+
+
+        //All Erasable Block Tags
+        this.tag(ModTags.Blocks.ERASABLE_TO_BLANK_BLOCKS)
+                .add(
+                        ModBlocks.ALPHABETIC_INDICATOR_TEMPLATE_BLOCK.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_A.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_B.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_C.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_D.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_E.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_F.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_G.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_H.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_I.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_J.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_K.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_L.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_M.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_N.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_O.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_P.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_Q.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_R.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_S.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_T.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_U.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_V.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_W.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_X.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_Y.get(),
+                        ModBlocks.ALPHABETIC_INDICATOR_BLOCK_Z.get(),
+                        ModBlocks.NUMERIC_INDICATOR_TEMPLATE_BLOCK.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_0.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_INFINITY.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_2.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_4.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_6.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_8.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_10.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_12.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_14.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_16.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_32.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_64.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_1000.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_EVEN.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_1.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_3.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_5.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_7.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_11.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_13.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_15.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_ODD.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_ADD.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_SUBTRACT.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_MULTIPLY.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_DIVIDE.get(),
+                        ModBlocks.NUMERIC_INDICATOR_BLOCK_EQUALS.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_TEMPLATE_BLOCK.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_WHITE.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_LIGHT_GRAY.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_GRAY.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_BLACK.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_BROWN.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_RED.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_ORANGE.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_YELLOW.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_LIME.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_GREEN.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_CYAN.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_LIGHT_BLUE.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_BLUE.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_PURPLE.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_MAGENTA.get(),
+                        ModBlocks.BLOCK_COLOR_INDICATOR_BLOCK_PINK.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK.get(),
+                        ModBlocks.DARKENED_BLANK_INDICATOR_BLOCK.get()
+                )
+        ;
+
+        this.tag(ModTags.Blocks.ERASABLE_TO_DARKENED_BLOCKS)
+                .add(ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_BLACK.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_DARK_BLUE.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_DARK_GREEN.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_DARK_AQUA.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_DARK_RED.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_DARK_PURPLE.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_GOLD.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_GRAY.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_DARK_GRAY.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_BLUE.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_GREEN.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_AQUA.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_RED.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_LIGHT_PURPLE.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_YELLOW.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_WHITE.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MINECOIN_GOLD.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_QUARTZ.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_IRON.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_NETHERITE.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_REDSTONE.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_COPPER.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_GOLD.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_EMERALD.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_DIAMOND.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_LAPIS.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_BLOCK_MATERIAL_AMETHYST.get(),
+                        ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED.get()
+                )
+        ;
+
+        this.tag(ModTags.Blocks.ERASABLE_TO_REDSTONE_LEVEL_BLOCKS)
+                .add(ModBlocks.REDSTONE_INDICATOR_BLOCK_0.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_1.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_2.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_3.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_4.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_5.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_6.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_7.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_8.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_9.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_10.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_11.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_12.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_13.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_14.get(),
+                        ModBlocks.REDSTONE_INDICATOR_BLOCK_15.get(),
+                        ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get()
+                )
+        ;
+        this.tag(ModTags.Blocks.ERASABLE_TO_PLAIN_REDSTONE_BLOCKS).add(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get());
+
+        this.tag(ModTags.Blocks.ERASABLE_TO_LIGHT_LEVEL_BLOCKS)
+                .add(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_0.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_1.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_2.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_3.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_4.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_5.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_6.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_7.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_8.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_9.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_10.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_11.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_12.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_13.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_14.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_15.get(),
+                        ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK.get()
+                )
+        ;
+        this.tag(ModTags.Blocks.ERASABLE_TO_PLAIN_GLOWSTONE_BLOCKS).add(ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK.get());
+
+        this.tag(ModTags.Blocks.ALL_ERASABLE_BLOCKS)
+                .addTag(ModTags.Blocks.ERASABLE_TO_BLANK_BLOCKS)
+                .addTag(ModTags.Blocks.ERASABLE_TO_DARKENED_BLOCKS)
+                .addTag(ModTags.Blocks.ERASABLE_TO_REDSTONE_LEVEL_BLOCKS)
+                .addTag(ModTags.Blocks.ERASABLE_TO_LIGHT_LEVEL_BLOCKS)
+                .addTag(ModTags.Blocks.ERASABLE_TO_PLAIN_REDSTONE_BLOCKS)
+                .addTag(ModTags.Blocks.ERASABLE_TO_PLAIN_GLOWSTONE_BLOCKS)
+
+        ;
+
     }
 }

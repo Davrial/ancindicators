@@ -1,6 +1,7 @@
 {
   "values": [
     "ancindicators:text_color_indicator_template_item",
+    "ancindicators:text_color_indicator_template_item_darkened",
     "ancindicators:text_color_indicator_item_black",
     "ancindicators:text_color_indicator_item_dark_blue",
     "ancindicators:text_color_indicator_item_dark_green",
