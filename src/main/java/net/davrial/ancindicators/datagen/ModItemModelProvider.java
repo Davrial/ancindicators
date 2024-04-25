@@ -99,6 +99,26 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.PALETTE);
         handheldItem(ModItems.PALETTE_BLOCKS);
         handheldItem(ModItems.PALETTE_TEXT);
+        handheldItem(ModItems.GETTER_STICK);
+
+        //Bottles
+        handheldItem(ModItems.VIAL_OF_DARKENING_SOLUTION);
+        handheldItem(ModItems.VIAL_OF_CLEANING_SOLUTION);
+        handheldItem(ModItems.FLASK_OF_ETERNAL_DARKNESS);
+        handheldItem(ModItems.VESSEL_OF_INFINITE_LIGHT);
+        //Paints
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_BROWN);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_RED);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_ORANGE);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_YELLOW);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_LIME);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_GREEN);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_CYAN);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_LIGHT_BLUE);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_BLUE);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_PURPLE);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_MAGENTA);
+        handheldItem(ModItems.VIAL_OF_PAINT_STRONG_PINK);
 
         //Alphabetic Items
         simpleItem(ModItems.ALPHABETIC_INDICATOR_ITEM_A);

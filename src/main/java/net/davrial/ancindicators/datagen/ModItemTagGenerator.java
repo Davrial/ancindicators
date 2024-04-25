@@ -422,7 +422,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.INDICATOR_DARKENING_ITEMS)
                 .add(   Items.INK_SAC,
                         Items.COAL,
-                        Items.CHARCOAL
+                        Items.CHARCOAL,
+                        ModItems.VIAL_OF_DARKENING_SOLUTION.get()
                 );
 
         this.tag(ModTags.Items.INDICATOR_DARKENING_ITEMS_WITH_DYES)
@@ -430,7 +431,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         Items.GRAY_DYE,
                         Items.INK_SAC,
                         Items.COAL,
-                        Items.CHARCOAL
+                        Items.CHARCOAL,
+                        ModItems.VIAL_OF_DARKENING_SOLUTION.get()
                 );
 
         this.tag(ModTags.Items.WRITING_ITEMS)
@@ -454,6 +456,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.ERASERS)
                 .add(   ModItems.ERASER.get(),
                         ModItems.MAGIC_ERASER.get()
+                )
+        ;
+
+        this.tag(ModTags.Items.BLOCK_COLOR_PALETTES)
+                .add(   ModItems.PALETTE.get(),
+                        ModItems.PALETTE_BLOCKS.get()
                 )
         ;
 

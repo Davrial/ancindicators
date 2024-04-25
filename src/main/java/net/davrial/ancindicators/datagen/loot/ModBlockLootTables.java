@@ -207,6 +207,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.LIGHT_LEVEL_INDICATOR_BLOCK_15.get());
 
 
+
+        this.dropSelf(ModBlocks.DARKNESS_BLOCK.get());
+        this.dropSelf(ModBlocks.LIGHT_BLOCK.get());
+
+
     }
 
 

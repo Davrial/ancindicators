@@ -4,6 +4,7 @@
     "minecraft:gray_dye",
     "minecraft:ink_sac",
     "minecraft:coal",
-    "minecraft:charcoal"
+    "minecraft:charcoal",
+    "ancindicators:vial_of_darkening_solution"
   ]
 }

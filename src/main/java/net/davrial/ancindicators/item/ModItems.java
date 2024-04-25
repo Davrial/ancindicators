@@ -1,9 +1,9 @@
 package net.davrial.ancindicators.item;
 
 import net.davrial.ancindicators.ANCIndicators;
-import net.davrial.ancindicators.item.custom.Eraser1Item;
-import net.davrial.ancindicators.item.custom.Eraser2Item;
+import net.davrial.ancindicators.item.custom.*;
 //import net.davrial.ancindicators.item.custom.MetalDetectorItem;
+import net.davrial.ancindicators.procedures.ModNameAndBlockNameExtracterGetterProcedure;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -79,11 +79,51 @@ public class ModItems {
     public static final RegistryObject<Item> MAGIC_ERASER = ITEMS.register("magic_eraser",
             () -> new Eraser2Item());
     public static final RegistryObject<Item> PALETTE = ITEMS.register("palette",
-            () -> new Item(new Item.Properties()));
+            () -> new Palette1Item());
     public static final RegistryObject<Item> PALETTE_BLOCKS = ITEMS.register("palette_blocks",
-            () -> new Item(new Item.Properties()));
+            () -> new Palette1Item());
     public static final RegistryObject<Item> PALETTE_TEXT = ITEMS.register("palette_text",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GETTER_STICK = ITEMS.register("getter_stick",
+            () -> new GetterStickItem());
+
+    //Bottles
+    public static final RegistryObject<Item> VIAL_OF_DARKENING_SOLUTION = ITEMS.register("vial_of_darkening_solution",
+            () -> new Palette1Item());
+    public static final RegistryObject<Item> VIAL_OF_CLEANING_SOLUTION = ITEMS.register("vial_of_cleaning_solution",
+            () -> new Palette1Item());
+    public static final RegistryObject<Item> FLASK_OF_ETERNAL_DARKNESS = ITEMS.register("flask_of_eternal_darkness",
+            () -> new FlaskOfEternalDarknessItem());
+    public static final RegistryObject<Item> VESSEL_OF_INFINITE_LIGHT = ITEMS.register("vessel_of_infinite_light",
+            () -> new VesselOfInfiniteLightItem());
+
+    //Paints
+
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_BROWN = ITEMS.register("vial_of_paint_strong_brown",
+            () -> new PaintStrongBrownItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_RED = ITEMS.register("vial_of_paint_strong_red",
+            () -> new PaintStrongRedItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_ORANGE = ITEMS.register("vial_of_paint_strong_orange",
+            () -> new PaintStrongOrangeItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_YELLOW = ITEMS.register("vial_of_paint_strong_yellow",
+            () -> new PaintStrongYellowItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_LIME = ITEMS.register("vial_of_paint_strong_lime",
+            () -> new PaintStrongLimeItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_GREEN = ITEMS.register("vial_of_paint_strong_green",
+            () -> new PaintStrongGreenItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_CYAN = ITEMS.register("vial_of_paint_strong_cyan",
+            () -> new PaintStrongCyanItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_LIGHT_BLUE = ITEMS.register("vial_of_paint_strong_light_blue",
+            () -> new PaintStrongLightBlueItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_BLUE = ITEMS.register("vial_of_paint_strong_blue",
+            () -> new PaintStrongBlueItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_PURPLE = ITEMS.register("vial_of_paint_strong_purple",
+            () -> new PaintStrongPurpleItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_MAGENTA = ITEMS.register("vial_of_paint_strong_magenta",
+            () -> new PaintStrongMagentaItem());
+    public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_PINK = ITEMS.register("vial_of_paint_strong_pink",
+            () -> new PaintStrongPinkItem());
 
 
     //Alphabetic Items

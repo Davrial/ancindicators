@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ancindicators:item/vessel_of_infinite_light"
+  }
+}

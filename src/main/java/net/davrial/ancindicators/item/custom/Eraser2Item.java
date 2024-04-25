@@ -33,7 +33,7 @@ public class Eraser2Item extends Item {
 
     @Override
     public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-        return Stream.of(BlockTags.create(new ResourceLocation("tag:non_blank_indicator_blocks"))).anyMatch(blockstate::is) ? 0f : 1;
+        return Stream.of(BlockTags.create(new ResourceLocation("tag:all_erasable_blocks"))).anyMatch(blockstate::is) ? 0f : 1;
     }
 
     @Override

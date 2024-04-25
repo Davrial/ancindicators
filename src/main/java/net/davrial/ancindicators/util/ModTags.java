@@ -42,6 +42,16 @@ public class ModTags {
         public static final TagKey<Block> ERASABLE_TO_PLAIN_REDSTONE_BLOCKS = tag("erasable_to_plain_redstone_blocks");
         public static final TagKey<Block> ERASABLE_TO_PLAIN_GLOWSTONE_BLOCKS = tag("erasable_to_plain_glowstone_blocks");
 
+        //Tags for coloring vanilla items
+        public static final TagKey<Block> ALL_PAINTABLE_BLOCKS = tag("all_paintable_blocks");
+        public static final TagKey<Block> PAINTABLE_VANILLA_BLOCKS = tag("paintable_vanilla_blocks");
+        public static final TagKey<Block> PAINTABLES_WOOL = tag("paintables_wool");
+        public static final TagKey<Block> PAINTABLES_CARPETS = tag("paintables_carpets");
+        public static final TagKey<Block> PAINTABLES_BEDS = tag("paintables_beds");
+        public static final TagKey<Block> PAINTABLES_TERRACOTTA = tag("paintables_terracotta");
+        public static final TagKey<Block> PAINTABLES_CONCRETE = tag("paintables_concrete");
+        public static final TagKey<Block> PAINTABLES_CONCRETE_POWDER = tag("paintables_concrete_powder");
+        public static final TagKey<Block> PAINTABLES_SHULKER_BOXES = tag("paintables_shulker_boxes");
 
 
         private static TagKey<Block> tag(String name) {
@@ -114,6 +124,8 @@ public class ModTags {
         public static final TagKey<Item> INDICATOR_CRAFTING_ITEMS = tag("indicator_crafting_materials");
         public static final TagKey<Item> MISC_ANCINDICATOR_ITEMS = tag("misc_ancindicator_items");
         public static final TagKey<Item> ERASERS = tag("erasers");
+        public static final TagKey<Item> BLOCK_COLOR_PALETTES = tag("block_color_palettes");
+
 
         //Letters
         public static final TagKey<Item> LETTER_A = tag("letter_a");

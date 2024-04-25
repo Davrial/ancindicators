@@ -225,6 +225,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.PALETTE.get());
                         pOutput.accept(ModItems.PALETTE_BLOCKS.get());
                         pOutput.accept(ModItems.PALETTE_TEXT.get());
+                        pOutput.accept(ModItems.FLASK_OF_ETERNAL_DARKNESS.get());
+                        pOutput.accept(ModItems.VESSEL_OF_INFINITE_LIGHT.get());
+                        pOutput.accept(ModItems.VIAL_OF_DARKENING_SOLUTION.get());
+                        pOutput.accept(ModItems.VIAL_OF_CLEANING_SOLUTION.get());
+                        pOutput.accept(ModItems.GETTER_STICK.get());
                     })
                     .build()
     );

@@ -1,24 +1,7 @@
 package net.davrial.ancindicators.block;
 
 import net.davrial.ancindicators.ANCIndicators;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock0;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock1;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock2;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock3;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock4;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock5;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock6;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock7;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock8;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock9;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock10;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock11;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock12;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock13;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock14;
-import net.davrial.ancindicators.block.custom.RedstoneIndicatorBlock15;
-import net.davrial.ancindicators.block.custom.WeakRedstoneIndicatorBlock15;
-import net.davrial.ancindicators.block.custom.SoundBlock;
+import net.davrial.ancindicators.block.custom.*;
 import net.davrial.ancindicators.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -393,6 +376,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 14).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
     public static final RegistryObject<Block> LIGHT_LEVEL_INDICATOR_BLOCK_15  = registerBlock("light_level_indicator_block_15",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).mapColor(MapColor.SAND).lightLevel(s -> 15).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)));
+
+
+    public static final RegistryObject<Block> DARKNESS_BLOCK  = registerBlock("darkness_block",
+            () -> new DarknessBlockBlock());
+    public static final RegistryObject<Block> LIGHT_BLOCK  = registerBlock("light_block",
+            () -> new LightBlockBlock());
 
 
 
