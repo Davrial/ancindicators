@@ -1,0 +1,17 @@
+{
+  "values": [
+    "ancindicators:eraser",
+    "ancindicators:magic_eraser",
+    "ancindicators:palette",
+    "ancindicators:palette_text",
+    "ancindicators:palette_blocks",
+    "ancindicators:flask_of_eternal_darkness",
+    "ancindicators:vessel_of_infinite_light",
+    "ancindicators:vial_of_cleaning_solution",
+    "ancindicators:vial_of_darkening_solution",
+    "ancindicators:vial_of_paint_strong_red",
+    "#ancindicators:erasers",
+    "#ancindicators:all_color_palettes",
+    "#ancindicators:all_paints"
+  ]
+}

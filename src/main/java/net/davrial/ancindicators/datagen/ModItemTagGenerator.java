@@ -42,6 +42,20 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 );
          */
 
+        this.tag(ModTags.Items.COLORING_TOOLS)
+                .add(ModItems.ERASER.get(),
+                    ModItems.MAGIC_ERASER.get(),
+                    ModItems.PALETTE.get(),
+                    ModItems.PALETTE_TEXT.get(),
+                    ModItems.PALETTE_BLOCKS.get(),
+                    ModItems.FLASK_OF_ETERNAL_DARKNESS.get(),
+                    ModItems.VESSEL_OF_INFINITE_LIGHT.get(),
+                    ModItems.VIAL_OF_CLEANING_SOLUTION.get(),
+                    ModItems.VIAL_OF_DARKENING_SOLUTION.get(),
+                    ModItems.VIAL_OF_PAINT_STRONG_RED.get()
+                )
+                .addTag(ModTags.Items.ERASERS)
+        ;
 
         this.tag(ModTags.Items.ANY_INDICATOR)
                 .addTag(ModTags.Items.ALL_INDICATOR_ITEMS)
@@ -453,15 +467,70 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 )
         ;
 
+        this.tag(ModTags.Items.COLORING_TOOLS)
+                .addTag(ModTags.Items.ALL_COLOR_PALETTES)
+                .addTag(ModTags.Items.ALL_PAINTS)
+        ;
+
         this.tag(ModTags.Items.ERASERS)
                 .add(   ModItems.ERASER.get(),
                         ModItems.MAGIC_ERASER.get()
                 )
         ;
 
+        this.tag(ModTags.Items.ALL_COLOR_PALETTES)
+                .addTag(ModTags.Items.BLOCK_COLOR_PALETTES)
+                .addTag(ModTags.Items.TEXT_COLOR_PALETTES)
+        ;
+
         this.tag(ModTags.Items.BLOCK_COLOR_PALETTES)
                 .add(   ModItems.PALETTE.get(),
                         ModItems.PALETTE_BLOCKS.get()
+                )
+        ;
+
+        this.tag(ModTags.Items.TEXT_COLOR_PALETTES)
+                .add(   ModItems.PALETTE.get(),
+                        ModItems.PALETTE_TEXT.get()
+                )
+        ;
+
+        this.tag(ModTags.Items.ALL_PAINTS)
+                .addTag(ModTags.Items.STRONG_PAINTS)
+                .addTag(ModTags.Items.WEAK_PAINTS)
+                .addTag(ModTags.Items.SPECIAL_PAINTS)
+        ;
+
+        this.tag(ModTags.Items.STRONG_PAINTS)
+                .add(
+                        ModItems.VESSEL_OF_INFINITE_LIGHT.get(),
+                        ModItems.FLASK_OF_ETERNAL_DARKNESS.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_BROWN.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_RED.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_ORANGE.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_YELLOW.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_LIME.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_GREEN.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_CYAN.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_LIGHT_BLUE.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_BLUE.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_PURPLE.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_MAGENTA.get(),
+                        ModItems.VIAL_OF_PAINT_STRONG_PINK.get()
+                )
+        ;
+
+        this.tag(ModTags.Items.WEAK_PAINTS)
+                .add(
+                        ModItems.VIAL_OF_CLEANING_SOLUTION.get(),
+                        ModItems.VIAL_OF_DARKENING_SOLUTION.get()
+                )
+        ;
+
+        this.tag(ModTags.Items.SPECIAL_PAINTS)
+                .add(
+                        ModItems.VESSEL_OF_INFINITE_LIGHT.get(),
+                        ModItems.FLASK_OF_ETERNAL_DARKNESS.get()
                 )
         ;
 

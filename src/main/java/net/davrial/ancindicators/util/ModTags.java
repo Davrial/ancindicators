@@ -124,7 +124,14 @@ public class ModTags {
         public static final TagKey<Item> INDICATOR_CRAFTING_ITEMS = tag("indicator_crafting_materials");
         public static final TagKey<Item> MISC_ANCINDICATOR_ITEMS = tag("misc_ancindicator_items");
         public static final TagKey<Item> ERASERS = tag("erasers");
+        public static final TagKey<Item> ALL_COLOR_PALETTES = tag("all_color_palettes");
         public static final TagKey<Item> BLOCK_COLOR_PALETTES = tag("block_color_palettes");
+        public static final TagKey<Item> TEXT_COLOR_PALETTES = tag("text_color_palettes");
+        public static final TagKey<Item> ALL_PAINTS = tag("all_paints");
+        public static final TagKey<Item> STRONG_PAINTS = tag("strong_paints");
+        public static final TagKey<Item> WEAK_PAINTS = tag("strong_paints");
+        public static final TagKey<Item> SPECIAL_PAINTS = tag("special_paints");
+        public static final TagKey<Item> COLORING_TOOLS = tag("coloring_tools");
 
 
         //Letters
