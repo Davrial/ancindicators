@@ -36,6 +36,7 @@ public class ModNameAndBlockNameExtracterGetterProcedure {
         if (itemstack.getItem() == ModItems.GETTER_STICK.get()) {
 
 
+
             //Mod Name and Item Name Getter
             ANCIndicators.LOGGER.info(ForgeRegistries.BLOCKS.getKey((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()).toString());
             ANCIndicators.LOGGER.info(String.valueOf(world.getBlockState(BlockPos.containing(x, y, z))));
@@ -71,6 +72,16 @@ public class ModNameAndBlockNameExtracterGetterProcedure {
                     true;
             String GetTextColon =
                     "";
+            String GetBlockNameCore =
+                    "";
+            int intX = (int) x;
+            int intY = (int) y;
+            int intZ = (int) z;
+            final String GetItemNameInitial =
+                    String.valueOf(itemstack.getItem());
+
+
+
             //Getting Full Block Name (Mod Name + Block Name)
             while (LoopFlag1 == true) {
                 for (int index1 = 1; index1 <= (int) GetNumberInitial; index1++) {
@@ -85,6 +96,8 @@ public class ModNameAndBlockNameExtracterGetterProcedure {
                     }
                 }
             }
+
+
 
             //Getting Block Data (Square Brackets) []
             while (LoopFlag2 == true) {
@@ -123,6 +136,7 @@ public class ModNameAndBlockNameExtracterGetterProcedure {
             }
 
 
+
             // Getting Items NBT Data (Curly Brackets, Inventory Contents) {}
 
             String GetBlockContentsString =
@@ -146,6 +160,7 @@ public class ModNameAndBlockNameExtracterGetterProcedure {
                     }
                 }.getValue(world, BlockPos.containing(x, y, z), "Items");
             }
+
 
 
             //Replacing copied NBT data
@@ -179,6 +194,7 @@ public class ModNameAndBlockNameExtracterGetterProcedure {
                     GetTextFinal;
             final String GetModName =
                     (GetModNamePlusColon.substring((int) 0, (GetNumberFinal - 1)));
+
 
 
             //Block Color Getter
@@ -444,6 +460,295 @@ public class ModNameAndBlockNameExtracterGetterProcedure {
 
 
 
+            GetBlockNameCore =
+                    GetTextInitial.substring(
+                            ( 0 + GetModNamePlusColon.length() + ColoredBlockPrefixColorString.length()),
+                            (GetTextInitial.length() - ColoredBlockAffixColorString.length()));
+
+
+
+            //Item Color Getter
+            double ColoredItemChecking =
+                    0;
+            boolean ColoredItem =
+                    false;
+            boolean ColoredItemPrefixColor =
+                    false;
+            boolean ColoredItemAffixColor =
+                    false;
+            boolean ColoredItemPrefixColorBool =
+                    false;
+            boolean ColoredItemAffixColorBool =
+                    false;
+            String ColoredItemPrefixColorString =
+                    "";
+            String ColoredItemAffixColorString =
+                    "";
+            String ColoredItemColorType =
+                    "";
+            ColoredItemChecking =
+                    0;
+            ColoredItem =
+                    false;
+            //Color Checking
+            while (ColoredItemChecking == 0) {
+                if (GetItemNameInitial.contains("white" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "white";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 1;
+                }
+                if (GetItemNameInitial.endsWith("_" + "white")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "white";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 1;
+                }
+                //Grays
+                if (GetItemNameInitial.contains("gray" + "_")) {
+                    if (GetItemNameInitial.contains("gray" + "_") && !GetTextColon.contains("light_gray" + "_")) {
+                        ColoredItem = true;
+                        ColoredItemPrefixColorBool = true;
+                        ColoredItemColorType = "gray";
+                        ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                        ColoredItemChecking = 3;
+                    }
+                    if (GetItemNameInitial.endsWith("light_gray" + "_")) {
+                        ColoredItem = true;
+                        ColoredItemPrefixColorBool = true;
+                        ColoredItemColorType = "light_gray";
+                        ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                        ColoredItemChecking = 2;
+                    }
+                } else if (GetItemNameInitial.contains("_" + "gray")) {
+                    if (GetItemNameInitial.contains("_" + "gray") && !GetTextColon.contains("_" + "light_gray") && !GetTextColon.contains("light_blue" + "_")) {
+                        ColoredItem = true;
+                        ColoredItemAffixColorBool = true;
+                        ColoredItemColorType = "gray";
+                        ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                        ColoredItemChecking = 3;
+                    }
+                    if (GetItemNameInitial.endsWith("_" + "light_gray") && !GetTextColon.contains("light_gray" + "_")) {
+                        ColoredItem = true;
+                        ColoredItemAffixColorBool = true;
+                        ColoredItemColorType = "light_gray";
+                        ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                        ColoredItemChecking = 2;
+                    }
+                }
+                if (GetItemNameInitial.contains("black" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "black";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 4;
+                }
+                if (GetItemNameInitial.endsWith("_" + "black")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "black";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 4;
+                }
+                if (GetItemNameInitial.contains("brown" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "brown";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 5;
+                }
+                if (GetItemNameInitial.endsWith("_" + "brown")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "brown";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 5;
+                }
+                if (GetItemNameInitial.contains("red" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "red";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 6;
+                }
+                if (GetItemNameInitial.endsWith("_" + "red")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "red";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 6;
+                }
+                if (GetItemNameInitial.contains("orange" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "orange";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 7;
+                }
+                if (GetItemNameInitial.endsWith("_" + "orange")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "orange";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 7;
+                }
+                if (GetItemNameInitial.contains("yellow" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "yellow";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 8;
+                }
+                if (GetItemNameInitial.endsWith("_" + "yellow")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "yellow";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 8;
+                }
+                if (GetItemNameInitial.contains("lime" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "lime";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 9;
+                }
+                if (GetItemNameInitial.endsWith("_" + "lime")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "lime";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 9;
+                }
+                if (GetItemNameInitial.contains("green" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "green";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 10;
+                }
+                if (GetItemNameInitial.endsWith("_" + "green")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "green";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 10;
+                }
+                if (GetItemNameInitial.contains("cyan" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "cyan";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 11;
+                }
+                if (GetItemNameInitial.endsWith("_" + "cyan")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "cyan";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 11;
+                }
+                //Blues
+                if (GetItemNameInitial.contains("blue" + "_")) {
+                    if (GetItemNameInitial.contains("blue" + "_") && !GetTextColon.contains("light_blue" + "_")) {
+                        ColoredItem = true;
+                        ColoredItemPrefixColorBool = true;
+                        ColoredItemColorType = "blue";
+                        ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                        ColoredItemChecking = 13;
+                    }
+                    if (GetItemNameInitial.contains("light_blue" + "_")) {
+                        ColoredItem = true;
+                        ColoredItemPrefixColorBool = true;
+                        ColoredItemColorType = "light_blue";
+                        ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                        ColoredItemChecking = 12;
+                    }
+                } else if (GetItemNameInitial.endsWith("_" + "blue")) {
+                    if (GetItemNameInitial.endsWith("_" + "blue") && !GetTextColon.endsWith("_" + "light_blue") && !GetTextColon.contains("light_blue" + "_")) {
+                        ColoredItem = true;
+                        ColoredItemAffixColorBool = true;
+                        ColoredItemColorType = "blue";
+                        ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                        ColoredItemChecking = 13;
+                    }
+                    if (GetItemNameInitial.endsWith("_" + "light_blue") && !GetTextColon.contains("light_blue" + "_")) {
+                        ColoredItem = true;
+                        ColoredItemAffixColorBool = true;
+                        ColoredItemColorType = "light_blue";
+                        ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                        ColoredItemChecking = 12;
+                    }
+                }
+                if (GetItemNameInitial.contains("purple" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "purple";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 14;
+                }
+                if (GetItemNameInitial.endsWith("_" + "purple")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "purple";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 14;
+                }
+                if (GetItemNameInitial.contains("magenta" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "magenta";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 15;
+                }
+                if (GetItemNameInitial.endsWith("_" + "magenta")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "magenta";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 15;
+                }
+                if (GetItemNameInitial.contains("pink" + "_")) {
+                    ColoredItem = true;
+                    ColoredItemPrefixColorBool = true;
+                    ColoredItemColorType = "pink";
+                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
+                    ColoredItemChecking = 16;
+                }
+                if (GetItemNameInitial.endsWith("_" + "pink")) {
+                    ColoredItem = true;
+                    ColoredItemAffixColorBool = true;
+                    ColoredItemColorType = "pink";
+                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
+                    ColoredItemChecking = 16;
+                } else {
+                    ColoredItemChecking = -1;
+                }
+            }
+
+
+
+            if ((ColoredBlock == true ) && (ColoredItem == true)) {
+
+                if ((ColoredBlockPrefixColorBool == true) && (ColoredItemPrefixColorBool == true) ) {
+                    ColoredBlockPrefixColorString = ColoredItemPrefixColorString;
+                }
+
+                else if ((ColoredBlockPrefixColorBool == true) && (ColoredItemAffixColorBool == true) ) {
+                    ColoredBlockPrefixColorString = (ColoredItemColorType + "_");
+                }
+
+                else if ((ColoredBlockAffixColorBool == true) && (ColoredItemPrefixColorBool == true) ) {
+                    ColoredBlockAffixColorString = ColoredItemAffixColorString;
+                }
+
+                else if ((ColoredBlockAffixColorBool == true) && (ColoredItemAffixColorBool == true) ) {
+                    ColoredBlockAffixColorString = ("_" + ColoredItemColorType);
+                }
+            }
+
 
 
             //All Loggers aka Text Print
@@ -474,6 +779,28 @@ public class ModNameAndBlockNameExtracterGetterProcedure {
             ANCIndicators.LOGGER.info("Affix? from Color Getter: " + ColoredBlockAffixColorBool);
             ANCIndicators.LOGGER.info("Get Color from Color Getter: " + ColoredBlockColorType);
             ANCIndicators.LOGGER.info((ForgeRegistries.BLOCKS.getKey((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()).toString()).replace("red_", ColoredBlockPrefixColorString));
+            ANCIndicators.LOGGER.info("GetBlockNameCore " + GetBlockNameCore);
+
+
+
+
+
+            ANCIndicators.LOGGER.info((
+                    "setblock "
+                            + intX
+                            + " "
+                            + intY
+                            + " "
+                            + intZ
+                            + " "
+                            + GetModName
+                            + ":"
+                            + ColoredBlockPrefixColorString
+                            + GetBlockNameCore
+                            + ColoredBlockAffixColorString
+                            + CBBDFinal
+                            + " replace"
+                    ));
 
 
 

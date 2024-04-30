@@ -3,6 +3,7 @@ package net.davrial.ancindicators.item.custom;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.davrial.ancindicators.procedures.AutomaticUniversalRecoloringProcedure;
 import net.davrial.ancindicators.procedures.PaintingStrongBrownProcedure;
 import net.davrial.ancindicators.procedures.PaintingStrongRedProcedure;
 import net.minecraft.core.BlockPos;
@@ -84,7 +85,7 @@ public class PaintStrongRedItem extends Item {
     @Override
     public InteractionResult useOn(UseOnContext context) {
         super.useOn(context);
-        PaintingStrongRedProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getItemInHand());
+        AutomaticUniversalRecoloringProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getItemInHand());
         return InteractionResult.SUCCESS;
     }
 }
