@@ -2,8 +2,12 @@ package net.davrial.ancindicators.procedures;
 
 import net.davrial.ancindicators.ANCIndicators;
 import net.davrial.ancindicators.block.ModBlocks;
+import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.block.state.properties.Property;
@@ -809,7 +813,7 @@ public class AutomaticUniversalRecoloringProcedure {
                     }
 
                     //Replace block command
-                    if (CommandBlockOrder == 2) {
+                    if (CommandBlockOrder == 2 || CommandBlockOrder == 3) {
                         try {
                             if (world instanceof ServerLevel _level)
                                 _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
@@ -828,17 +832,209 @@ public class AutomaticUniversalRecoloringProcedure {
                                                 + CBBDFinal
                                                 + " replace"
                                 );
+                            String CBBDFinalBeds = CBBDFinal;
+                            System.out.println("CBBDFinalBeds: " + CBBDFinalBeds);
+                            if (GetBlockName.contains("_bed")){
+                                System.out.println("execute as @p run setblock "
+                                        + intX
+                                        + " "
+                                        + intY
+                                        + " "
+                                        + (intZ+1)
+                                        + " "
+                                        + GetModName
+                                        + ":"
+                                        + ColoredBlockPrefixColorString
+                                        + GetBlockNameCore
+                                        + ColoredBlockAffixColorString
+                                        + CBBDFinalBeds
+                                        + " replace");
+                                if ((CBBDFinal.contains("south")) && (CBBDFinal.contains("foot"))){
+                                    CBBDFinalBeds = "[facing=south,occupied=false,part=head]";
+                                    System.out.println("CBBDFinalBeds1: " + CBBDFinalBeds);
+                                    if (world instanceof ServerLevel _level)
+                                        _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                                "execute as @p run setblock "
+                                                        + intX
+                                                        + " "
+                                                        + intY
+                                                        + " "
+                                                        + (intZ+1)
+                                                        + " "
+                                                        + GetModName
+                                                        + ":"
+                                                        + ColoredBlockPrefixColorString
+                                                        + GetBlockNameCore
+                                                        + ColoredBlockAffixColorString
+                                                        + CBBDFinalBeds
+                                                        + " replace"
+                                        );
+                                }
+                                else if ((CBBDFinal.contains("south")) && (CBBDFinal.contains("head"))){
+                                    CBBDFinalBeds = "[facing=south,occupied=false,part=foot]";
+                                    System.out.println("CBBDFinalBeds2: " + CBBDFinalBeds);
+                                    if (world instanceof ServerLevel _level)
+                                        _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                                "execute as @p run setblock "
+                                                        + intX
+                                                        + " "
+                                                        + intY
+                                                        + " "
+                                                        + (intZ-1)
+                                                        + " "
+                                                        + GetModName
+                                                        + ":"
+                                                        + ColoredBlockPrefixColorString
+                                                        + GetBlockNameCore
+                                                        + ColoredBlockAffixColorString
+                                                        + CBBDFinalBeds
+                                                        + " replace"
+                                        );
+                                }
+                                else if ((CBBDFinal.contains("north")) && (CBBDFinal.contains("foot"))){
+                                    CBBDFinalBeds = "[facing=north,occupied=false,part=head]";
+                                    System.out.println("CBBDFinalBeds3: " + CBBDFinalBeds);
+                                    if (world instanceof ServerLevel _level)
+                                        _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                                "execute as @p run setblock "
+                                                        + intX
+                                                        + " "
+                                                        + intY
+                                                        + " "
+                                                        + (intZ-1)
+                                                        + " "
+                                                        + GetModName
+                                                        + ":"
+                                                        + ColoredBlockPrefixColorString
+                                                        + GetBlockNameCore
+                                                        + ColoredBlockAffixColorString
+                                                        + CBBDFinalBeds
+                                                        + " replace"
+                                        );
+                                }
+                                else if ((CBBDFinal.contains("north")) && (CBBDFinal.contains("head"))){
+                                    CBBDFinalBeds = "[facing=north,occupied=false,part=foot]";
+                                    System.out.println("CBBDFinalBeds4: " + CBBDFinalBeds);
+                                    if (world instanceof ServerLevel _level)
+                                        _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                                "execute as @p run setblock "
+                                                        + intX
+                                                        + " "
+                                                        + intY
+                                                        + " "
+                                                        + (intZ+1)
+                                                        + " "
+                                                        + GetModName
+                                                        + ":"
+                                                        + ColoredBlockPrefixColorString
+                                                        + GetBlockNameCore
+                                                        + ColoredBlockAffixColorString
+                                                        + CBBDFinalBeds
+                                                        + " replace"
+                                        );
+                                }
+                                else if ((CBBDFinal.contains("west")) && (CBBDFinal.contains("foot"))){
+                                    CBBDFinalBeds = "[facing=west,occupied=false,part=head]";
+                                    System.out.println("CBBDFinalBeds5: " + CBBDFinalBeds);
+                                    if (world instanceof ServerLevel _level)
+                                        _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                                "execute as @p run setblock "
+                                                        + (intX-1)
+                                                        + " "
+                                                        + intY
+                                                        + " "
+                                                        + intZ
+                                                        + " "
+                                                        + GetModName
+                                                        + ":"
+                                                        + ColoredBlockPrefixColorString
+                                                        + GetBlockNameCore
+                                                        + ColoredBlockAffixColorString
+                                                        + CBBDFinalBeds
+                                                        + " replace"
+                                        );
+                                }
+                                else if ((CBBDFinal.contains("west")) && (CBBDFinal.contains("head"))){
+                                    CBBDFinalBeds = "[facing=west,occupied=false,part=foot]";
+                                    System.out.println("CBBDFinalBeds6: " + CBBDFinalBeds);
+                                    if (world instanceof ServerLevel _level)
+                                        _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                                "execute as @p run setblock "
+                                                        + (intX+1)
+                                                        + " "
+                                                        + intY
+                                                        + " "
+                                                        + intZ
+                                                        + " "
+                                                        + GetModName
+                                                        + ":"
+                                                        + ColoredBlockPrefixColorString
+                                                        + GetBlockNameCore
+                                                        + ColoredBlockAffixColorString
+                                                        + CBBDFinalBeds
+                                                        + " replace"
+                                        );
+                                }
+                                else if ((CBBDFinal.contains("east")) && (CBBDFinal.contains("foot"))){
+                                    CBBDFinalBeds = "[facing=east,occupied=false,part=head]";
+                                    System.out.println("CBBDFinalBeds7: " + CBBDFinalBeds);
+                                    if (world instanceof ServerLevel _level)
+                                        _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                                "execute as @p run setblock "
+                                                        + (intX+1)
+                                                        + " "
+                                                        + intY
+                                                        + " "
+                                                        + intZ
+                                                        + " "
+                                                        + GetModName
+                                                        + ":"
+                                                        + ColoredBlockPrefixColorString
+                                                        + GetBlockNameCore
+                                                        + ColoredBlockAffixColorString
+                                                        + CBBDFinalBeds
+                                                        + " replace"
+                                        );
+                                }
+                                else if ((CBBDFinal.contains("east")) && (CBBDFinal.contains("head"))){
+                                    CBBDFinalBeds = "[facing=east,occupied=false,part=foot]";
+                                    System.out.println("CBBDFinalBeds8: " + CBBDFinalBeds);
+                                    if (world instanceof ServerLevel _level)
+                                        _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                                "execute as @p run setblock "
+                                                        + (intX-1)
+                                                        + " "
+                                                        + intY
+                                                        + " "
+                                                        + intZ
+                                                        + " "
+                                                        + GetModName
+                                                        + ":"
+                                                        + ColoredBlockPrefixColorString
+                                                        + GetBlockNameCore
+                                                        + ColoredBlockAffixColorString
+                                                        + CBBDFinalBeds
+                                                        + " replace"
+                                        );
+                                }
+                            }
                             //ANCIndicators.MOD_ID.wait(1);
-                            System.out.println("setblock " + intX + " " + intY + " " + intZ + " " + GetModName + ":" + ColoredBlockPrefixColorString + GetBlockNameCore + ColoredBlockAffixColorString + CBBDFinal + " replace");
-                            CommandBlockOrder = 3;
+                            CommandBlockOrder = 4;
                         } catch (Exception e) {
                             System.out.println("Something went wrong withe the SetBlock command");
                             CommandBlockOrder = 0;
                         }
                     }
 
+                    //Beds procedure
+                    System.out.println("CBBDFinal; " + CBBDFinal);
+                    if (CommandBlockOrder == 0 || CommandBlockOrder == 0) {
+
+                        CommandBlockOrder++;
+                    }
+
                     //Replace block data command
-                    if (CommandBlockOrder == 3) {
+                    if (CommandBlockOrder == 4) {
                         try {
                             System.out.println("Is this even doing anything???");
                             if (world instanceof ServerLevel _level)
@@ -852,7 +1048,7 @@ public class AutomaticUniversalRecoloringProcedure {
                                                 + " Items set from storage colorchangeitemsget Items"
                                 );
                             System.out.println("execute as @p run data modify block " + intX + " " + intY + " " + intZ + " Items set from storage colorchangeitemsget Items");
-                            CommandBlockOrder = 4;
+                            CommandBlockOrder = 5;
                         } catch (Exception e) {
                             System.out.println("Something went wrong withe the Modify Data command");
                             CommandBlockOrder = 0;
@@ -860,20 +1056,20 @@ public class AutomaticUniversalRecoloringProcedure {
                     }
 
                     //Clear stored block data command
-                    if (CommandBlockOrder == 4) {
+                    if (CommandBlockOrder == 5) {
                         try {
                             System.out.println("Is this even doing anything???");
                             if (world instanceof ServerLevel _level)
                                 _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "Items", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
                                         "execute as @p run data remove storage colorchangeitemsget Items"
                                 );
-                            CommandBlockOrder = 5;
+                            CommandBlockOrder = 6;
                         } catch (Exception e) {
                             System.out.println("Something went wrong withe the Modify Data command");
                             CommandBlockOrder = 0;
                         }
                     }
-                    if (CommandBlockOrder == 5) {
+                    if (CommandBlockOrder == 6) {
                         CommandBlockOrder = 0;
                     }
                 }
