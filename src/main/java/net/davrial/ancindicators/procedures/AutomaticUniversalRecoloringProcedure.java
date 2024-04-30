@@ -3,6 +3,7 @@ package net.davrial.ancindicators.procedures;
 import net.davrial.ancindicators.ANCIndicators;
 import net.davrial.ancindicators.block.ModBlocks;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.entity.Entity;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.block.state.properties.Property;
@@ -80,6 +81,7 @@ public class AutomaticUniversalRecoloringProcedure {
 
 
             // Getting the NBT from the source block
+            /*
             Object GetNBTTagsFromOriginalBlock = null;
                 try {
                         if ((new Object() {
@@ -107,6 +109,7 @@ public class AutomaticUniversalRecoloringProcedure {
                 }
                 System.out.println("After New Object set process: " + GetNBTTagsFromOriginalBlock);
                 System.out.println("GetValue check after New Object set process: " + GetNBTTagsFromOriginalBlock);
+                */
 
 
 
@@ -776,30 +779,107 @@ public class AutomaticUniversalRecoloringProcedure {
                     System.out.println("Something went wrong with the Color Change process");
                 }
 
+                BlockEntity clickedBlockEntity = null;
+                if(clickedBlock.hasBlockEntity() == true){
+                    clickedBlockEntity = world.getBlockEntity(BlockPos.containing(x, y, z));
+                }
 
-                    try {
-                        if (world instanceof ServerLevel _level)
-                            _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-                                    "setblock "
-                                            + intX
-                                            + " "
-                                            + intY
-                                            + " "
-                                            + intZ
-                                            + " "
-                                            + GetModName
-                                            + ":"
-                                            + ColoredBlockPrefixColorString
-                                            + GetBlockNameCore
-                                            + ColoredBlockAffixColorString
-                                            + CBBDFinal
-                                            + " replace"
-                            );
-                    } catch (Exception e) {
-                        System.out.println("Something went wrong withe the SetBlock command");
+                int CommandBlockOrder = 1;
+                while (CommandBlockOrder != 0) {
+                    //get data command
+                    if (CommandBlockOrder == 1) {
+                        try {
+                            if (world instanceof ServerLevel _level)
+                                _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "Items", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                        "execute as @p run data modify storage colorchangeitemsget Items set from block "
+                                                + intX
+                                                + " "
+                                                + intY
+                                                + " "
+                                                + intZ
+                                                + " Items"
+                                );
+                            //ANCIndicators.MOD_ID.wait(1);
+                            System.out.println("execute as @p run data modify storage colorchangeitemsget Items set from block " + intX + " " + intY + " " + intZ + " Items");
+                            CommandBlockOrder = 2;
+                        } catch (Exception e) {
+                            System.out.println("Something went wrong withe the Get Data command");
+                            CommandBlockOrder = 2;
+                        }
                     }
 
+                    //Replace block command
+                    if (CommandBlockOrder == 2) {
+                        try {
+                            if (world instanceof ServerLevel _level)
+                                _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                        "setblock "
+                                                + intX
+                                                + " "
+                                                + intY
+                                                + " "
+                                                + intZ
+                                                + " "
+                                                + GetModName
+                                                + ":"
+                                                + ColoredBlockPrefixColorString
+                                                + GetBlockNameCore
+                                                + ColoredBlockAffixColorString
+                                                + CBBDFinal
+                                                + " replace"
+                                );
+                            //ANCIndicators.MOD_ID.wait(1);
+                            System.out.println("setblock " + intX + " " + intY + " " + intZ + " " + GetModName + ":" + ColoredBlockPrefixColorString + GetBlockNameCore + ColoredBlockAffixColorString + CBBDFinal + " replace");
+                            CommandBlockOrder = 3;
+                        } catch (Exception e) {
+                            System.out.println("Something went wrong withe the SetBlock command");
+                            CommandBlockOrder = 0;
+                        }
+                    }
 
+                    //Replace block data command
+                    if (CommandBlockOrder == 3) {
+                        try {
+                            System.out.println("Is this even doing anything???");
+                            if (world instanceof ServerLevel _level)
+                                _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "Items", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                        "execute as @p run data modify block "
+                                                + intX
+                                                + " "
+                                                + intY
+                                                + " "
+                                                + intZ
+                                                + " Items set from storage colorchangeitemsget Items"
+                                );
+                            System.out.println("execute as @p run data modify block " + intX + " " + intY + " " + intZ + " Items set from storage colorchangeitemsget Items");
+                            CommandBlockOrder = 4;
+                        } catch (Exception e) {
+                            System.out.println("Something went wrong withe the Modify Data command");
+                            CommandBlockOrder = 0;
+                        }
+                    }
+
+                    //Clear stored block data command
+                    if (CommandBlockOrder == 4) {
+                        try {
+                            System.out.println("Is this even doing anything???");
+                            if (world instanceof ServerLevel _level)
+                                _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "Items", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+                                        "execute as @p run data remove storage colorchangeitemsget Items"
+                                );
+                            CommandBlockOrder = 5;
+                        } catch (Exception e) {
+                            System.out.println("Something went wrong withe the Modify Data command");
+                            CommandBlockOrder = 0;
+                        }
+                    }
+                    if (CommandBlockOrder == 5) {
+                        CommandBlockOrder = 0;
+                    }
+                }
+
+
+                /*
                 try {
                     //Adding the NBT data back to the new block
                     if (!world.isClientSide()) {
@@ -814,6 +894,7 @@ public class AutomaticUniversalRecoloringProcedure {
                 } catch (Exception e) {
                     System.out.println("Something went wrong with adding the NBT data back");
                 }
+                */
 
 
                 //Play Sound On Finish
