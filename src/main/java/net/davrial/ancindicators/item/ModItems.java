@@ -101,29 +101,29 @@ public class ModItems {
     //Paints
 
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_BROWN = ITEMS.register("vial_of_paint_strong_brown",
-            () -> new PaintStrongBrownItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_RED = ITEMS.register("vial_of_paint_strong_red",
-            () -> new PaintStrongRedItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_ORANGE = ITEMS.register("vial_of_paint_strong_orange",
-            () -> new PaintStrongOrangeItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_YELLOW = ITEMS.register("vial_of_paint_strong_yellow",
-            () -> new PaintStrongYellowItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_LIME = ITEMS.register("vial_of_paint_strong_lime",
-            () -> new PaintStrongLimeItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_GREEN = ITEMS.register("vial_of_paint_strong_green",
-            () -> new PaintStrongGreenItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_CYAN = ITEMS.register("vial_of_paint_strong_cyan",
-            () -> new PaintStrongCyanItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_LIGHT_BLUE = ITEMS.register("vial_of_paint_strong_light_blue",
-            () -> new PaintStrongLightBlueItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_BLUE = ITEMS.register("vial_of_paint_strong_blue",
-            () -> new PaintStrongBlueItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_PURPLE = ITEMS.register("vial_of_paint_strong_purple",
-            () -> new PaintStrongPurpleItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_MAGENTA = ITEMS.register("vial_of_paint_strong_magenta",
-            () -> new PaintStrongMagentaItem());
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_PINK = ITEMS.register("vial_of_paint_strong_pink",
-            () -> new PaintStrongPinkItem());
+            () -> new AutomaticUniversalRecoloringItem());
 
 
     //Alphabetic Items

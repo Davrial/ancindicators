@@ -3,8 +3,7 @@ package net.davrial.ancindicators.item.custom;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.davrial.ancindicators.procedures.PaintingStrongGreenProcedure;
-import net.davrial.ancindicators.procedures.PaintingStrongLimeProcedure;
+import net.davrial.ancindicators.procedures.AutomaticUniversalRecoloringProcedure;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -22,8 +21,8 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.stream.Stream;
 
-public class PaintStrongGreenItem extends Item {
-    public PaintStrongGreenItem() {
+public class AutomaticUniversalRecoloringItem extends Item {
+    public AutomaticUniversalRecoloringItem() {
         super(new Properties());
     }
 
@@ -84,7 +83,7 @@ public class PaintStrongGreenItem extends Item {
     @Override
     public InteractionResult useOn(UseOnContext context) {
         super.useOn(context);
-        PaintingStrongGreenProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getItemInHand());
+        AutomaticUniversalRecoloringProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getItemInHand());
         return InteractionResult.SUCCESS;
     }
 }
