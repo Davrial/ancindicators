@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc,",
+  "pattern": [
+    "DDD",
+    "DBD",
+    "DDD"
+  ],
+  "key": {
+    "B": [     {"item": "minecraft:potion{Potion: \"minecraft:thick\"}"},
+               {"item": "minecraft:potion{Potion: \"minecraft:mundane\"}"}
+         ],
+    "D": {      "tag": "minecraft:pink_dye"    }
+  },
+  "result": {    "item": "ancindicators:vial_of_paint_strong_pink",  "count": 8    }
+}

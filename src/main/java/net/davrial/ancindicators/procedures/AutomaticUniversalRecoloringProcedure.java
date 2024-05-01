@@ -275,7 +275,7 @@ public class AutomaticUniversalRecoloringProcedure {
                                     ColoredBlockPrefixColorString = ColoredBlockColorType + "_";
                                     ColoredBlockChecking = 3;
                                 }
-                                if (GetTextInitial.endsWith("light_gray" + "_")) {
+                                if (GetTextInitial.contains("light_gray" + "_")) {
                                     ColoredBlock = true;
                                     ColoredBlockPrefixColorBool = true;
                                     ColoredBlockColorType = "light_gray";
@@ -283,7 +283,7 @@ public class AutomaticUniversalRecoloringProcedure {
                                     ColoredBlockChecking = 2;
                                 }
                             } else if (GetTextInitial.contains("_" + "gray")) {
-                                if (GetTextInitial.contains("_" + "gray") && !GetTextColon.contains("_" + "light_gray") && !GetTextColon.contains("light_blue" + "_")) {
+                                if (GetTextInitial.contains("_" + "gray") && !GetTextColon.contains("_" + "light_gray") && !GetTextColon.contains("light_gray" + "_")) {
                                     ColoredBlock = true;
                                     ColoredBlockAffixColorBool = true;
                                     ColoredBlockColorType = "gray";
@@ -529,38 +529,6 @@ public class AutomaticUniversalRecoloringProcedure {
                                 ColoredItemColorType = "white";
                                 ColoredItemAffixColorString = "_" + ColoredItemColorType;
                                 ColoredItemChecking = 1;
-                            }
-                            //Grays
-                            if (GetItemNameInitial.contains("gray" + "_")) {
-                                if (GetItemNameInitial.contains("gray" + "_") && !GetTextColon.contains("light_gray" + "_")) {
-                                    ColoredItem = true;
-                                    ColoredItemPrefixColorBool = true;
-                                    ColoredItemColorType = "gray";
-                                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
-                                    ColoredItemChecking = 3;
-                                }
-                                if (GetItemNameInitial.endsWith("light_gray" + "_")) {
-                                    ColoredItem = true;
-                                    ColoredItemPrefixColorBool = true;
-                                    ColoredItemColorType = "light_gray";
-                                    ColoredItemPrefixColorString = ColoredItemColorType + "_";
-                                    ColoredItemChecking = 2;
-                                }
-                            } else if (GetItemNameInitial.contains("_" + "gray")) {
-                                if (GetItemNameInitial.contains("_" + "gray") && !GetTextColon.contains("_" + "light_gray") && !GetTextColon.contains("light_blue" + "_")) {
-                                    ColoredItem = true;
-                                    ColoredItemAffixColorBool = true;
-                                    ColoredItemColorType = "gray";
-                                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
-                                    ColoredItemChecking = 3;
-                                }
-                                if (GetItemNameInitial.endsWith("_" + "light_gray") && !GetTextColon.contains("light_gray" + "_")) {
-                                    ColoredItem = true;
-                                    ColoredItemAffixColorBool = true;
-                                    ColoredItemColorType = "light_gray";
-                                    ColoredItemAffixColorString = "_" + ColoredItemColorType;
-                                    ColoredItemChecking = 2;
-                                }
                             }
                             if (GetItemNameInitial.contains("black" + "_")) {
                                 ColoredItem = true;
