@@ -499,6 +499,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(
                         ModItems.VESSEL_OF_INFINITE_LIGHT.get(),
                         ModItems.FLASK_OF_ETERNAL_DARKNESS.get(),
+                        ModItems.VIAL_OF_CLEANING_SOLUTION_WHITE.get(),
+                        ModItems.VIAL_OF_DARKENING_SOLUTION_BLACK.get(),
                         ModItems.VIAL_OF_PAINT_STRONG_BROWN.get(),
                         ModItems.VIAL_OF_PAINT_STRONG_RED.get(),
                         ModItems.VIAL_OF_PAINT_STRONG_ORANGE.get(),
