@@ -1,49 +1,11 @@
 {
-  "item.ancindicators.sapphire": "Sapphire",
-  "item.ancindicators.raw_sapphire": "Raw Sapphire",
-
-  "item.ancindicators.sapphire_staff": "Sapphire Staff",
-
-  "item.ancindicators.sapphire_sword": "Sapphire Sword",
-  "item.ancindicators.sapphire_pickaxe": "Sapphire Pickaxe",
-  "item.ancindicators.sapphire_axe": "Sapphire Axe",
-  "item.ancindicators.sapphire_shovel": "Sapphire Shovel",
-  "item.ancindicators.sapphire_hoe": "Sapphire Hoe",
-
-  "item.ancindicators.sapphire_helmet": "Sapphire Helmet",
-  "item.ancindicators.sapphire_chestplate": "Sapphire Chestplate",
-  "item.ancindicators.sapphire_leggings": "Sapphire Leggings",
-  "item.ancindicators.sapphire_boots": "Sapphire Boots",
-
-  "block.ancindicators.sapphire_block": "Block of Sapphire",
-  "block.ancindicators.raw_sapphire_block": "Block of Raw Sapphire",
-
-  "block.ancindicators.sapphire_ore": "Sapphire Ore",
-  "block.ancindicators.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
-  "block.ancindicators.nether_sapphire_ore": "Nether Sapphire Ore",
-  "block.ancindicators.end_stone_sapphire_ore": "Endstone Sapphire Ore",
-
-  "block.ancindicators.sapphire_stairs": "Sapphire Stairs",
-  "block.ancindicators.sapphire_slab": "Sapphire Slab",
-  "block.ancindicators.sapphire_button": "Sapphire Button",
-  "block.ancindicators.sapphire_pressure_plate": "Sapphire Pressure Plate",
-  "block.ancindicators.sapphire_fence": "Sapphire Fence",
-  "block.ancindicators.sapphire_fence_gate": "Sapphire Fence Gate",
-  "block.ancindicators.sapphire_wall": "Sapphire Wall",
-  "block.ancindicators.sapphire_door": "Sapphire Door",
-  "block.ancindicators.sapphire_trapdoor": "Sapphire Trapdoor",
-
-
 
 
 
   "block.ancindicators.insert_blocks_here": "INSERT BLOCKS HERE",
   "block.ancindicators.insert_items_here": "INSERT ITEMS HERE",
 
-  "item.ancindicators.eraser": "Eraser",
-  "item.ancindicators.palette": "Palette",
-  "item.ancindicators.palette_blocks": "Block Colors Palette",
-  "item.ancindicators.palette_text": "Text Colors Palette",
+
 
   "block.ancindicators.blank_indicator_block": "Blank Indicator Block",
   "block.ancindicators.darkened_blank_indicator_block": "Darkened Blank Indicator Block",
@@ -54,6 +16,8 @@
   "block.ancindicators.text_color_indicator_template_block_darkened": "Darkened Text Color Indicator Template Block",
   "block.ancindicators.redstone_indicator_template_block": "Redstone Indicator Template Block",
   "block.ancindicators.blank_redstone_indicator_block": "Blank Redstone Indicator Block",
+  "block.ancindicators.light_level_indicator_template_block": "Light Level Indicator Template Block",
+  "block.ancindicators.blank_light_level_indicator_block": "Blank Light Level Indicator Block",
 
   "block.ancindicators.alphabetic_indicator_block_a": "Alphabetic Indicator: A (Block)",
   "block.ancindicators.alphabetic_indicator_block_b": "Alphabetic Indicator: B (Block)",
@@ -173,6 +137,24 @@
   "block.ancindicators.redstone_indicator_block_14": "Redstone Indicator Block: Signal Strength 14",
   "block.ancindicators.redstone_indicator_block_15": "Redstone Indicator Block: Signal Strength 15",
 
+  "block.ancindicators.light_level_indicator_block_0": "Light Level Indicator Block: Brightness 0",
+  "block.ancindicators.light_level_indicator_block_1": "Light Level Indicator Block: Brightness 1",
+  "block.ancindicators.light_level_indicator_block_2": "Light Level Indicator Block: Brightness 2",
+  "block.ancindicators.light_level_indicator_block_3": "Light Level Indicator Block: Brightness 3",
+  "block.ancindicators.light_level_indicator_block_4": "Light Level Indicator Block: Brightness 4",
+  "block.ancindicators.light_level_indicator_block_5": "Light Level Indicator Block: Brightness 5",
+  "block.ancindicators.light_level_indicator_block_6": "Light Level Indicator Block: Brightness 6",
+  "block.ancindicators.light_level_indicator_block_7": "Light Level Indicator Block: Brightness 7",
+  "block.ancindicators.light_level_indicator_block_8": "Light Level Indicator Block: Brightness 8",
+  "block.ancindicators.light_level_indicator_block_9": "Light Level Indicator Block: Brightness 9",
+  "block.ancindicators.light_level_indicator_block_10": "Light Level Indicator Block: Brightness 10",
+  "block.ancindicators.light_level_indicator_block_11": "Light Level Indicator Block: Brightness 11",
+  "block.ancindicators.light_level_indicator_block_12": "Light Level Indicator Block: Brightness 12",
+  "block.ancindicators.light_level_indicator_block_13": "Light Level Indicator Block: Brightness 13",
+  "block.ancindicators.light_level_indicator_block_14": "Light Level Indicator Block: Brightness 14",
+  "block.ancindicators.light_level_indicator_block_15": "Light Level Indicator Block: Brightness 15",
+
+
 
 
 
@@ -183,6 +165,32 @@
   "item.ancindicators.block_color_indicator_template_item": "Item Color Indicator Template Item",
   "item.ancindicators.text_color_indicator_template_item": "Text Color Indicator Template Item",
   "item.ancindicators.text_color_indicator_template_item_darkened": "Darkened Text Color Indicator Template Item",
+
+  "item.ancindicators.eraser": "Eraser",
+  "item.ancindicators.magic_eraser": "Magic Eraser",
+  "item.ancindicators.palette": "Palette",
+  "item.ancindicators.palette_blocks": "Block Colors Palette",
+  "item.ancindicators.palette_text": "Text Colors Palette",
+  "item.ancindicators.getter_stick": "Block Color Information Getter Debug Stick",
+
+
+  "item.ancindicators.bottle_of_paint_base": "Bottle of Paint Base",
+  "item.ancindicators.vessel_of_infinite_light": "Vessel of Infinite Light",
+  "item.ancindicators.flask_of_eternal_darkness": "Flask of Eternal Darkness",
+  "item.ancindicators.vial_of_cleaning_solution": "Vial of Cleaning Solution",
+  "item.ancindicators.vial_of_darkening_solution": "Vial of Darkening Solution",
+  "item.ancindicators.vial_of_paint_strong_brown": "Vial of Brown Paint",
+  "item.ancindicators.vial_of_paint_strong_red": "Vial of Red Paint",
+  "item.ancindicators.vial_of_paint_strong_orange": "Vial of Orange Paint",
+  "item.ancindicators.vial_of_paint_strong_yellow": "Vial of Yellow Paint",
+  "item.ancindicators.vial_of_paint_strong_lime": "Vial of Lime Paint",
+  "item.ancindicators.vial_of_paint_strong_green": "Vial of Green Paint",
+  "item.ancindicators.vial_of_paint_strong_cyan": "Vial of Cyan Paint",
+  "item.ancindicators.vial_of_paint_strong_light_blue": "Vial of Light Blue Paint",
+  "item.ancindicators.vial_of_paint_strong_blue": "Vial of Blue Paint",
+  "item.ancindicators.vial_of_paint_strong_purple": "Vial of Purple Paint",
+  "item.ancindicators.vial_of_paint_strong_magenta": "Vial of Magenta Paint",
+  "item.ancindicators.vial_of_paint_strong_pink": "Vial of Pink Paint",
 
   "item.ancindicators.alphabetic_indicator_item_a": "Alphabetic Indicator: A (Item)",
   "item.ancindicators.alphabetic_indicator_item_b": "Alphabetic Indicator: B (Item)",

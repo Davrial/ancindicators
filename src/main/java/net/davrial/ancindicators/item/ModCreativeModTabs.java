@@ -274,6 +274,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.TEXT_COLOR_INDICATOR_TEMPLATE_BLOCK_DARKENED.get());
                         pOutput.accept(ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK.get());
+                        pOutput.accept(ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK.get());
 
                         //Alphabetic Blocks
                         pOutput.accept(ModBlocks.ALPHABETIC_INDICATOR_BLOCK_A.get());

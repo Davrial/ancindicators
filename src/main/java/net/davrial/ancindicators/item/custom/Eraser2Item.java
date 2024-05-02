@@ -50,7 +50,7 @@ public class Eraser2Item extends Item {
 
     @Override
     public int getEnchantmentValue() {
-        return 1;
+        return 15;
     }
 
     @Override

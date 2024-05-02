@@ -32,50 +32,6 @@ public class Eraser1Item extends Item {
     }
 
     @Override
-    public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
-        itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-        return true;
-    }
-
-    @Override
-    public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-        itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-        return true;
-    }
-
-    @Override
-    public int getEnchantmentValue() {
-        return 1;
-    }
-
-    @Override
-    public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot equipmentSlot) {
-        if (equipmentSlot == EquipmentSlot.MAINHAND) {
-            ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
-            builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
-            builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 0f, AttributeModifier.Operation.ADDITION));
-            builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", 0, AttributeModifier.Operation.ADDITION));
-            return builder.build();
-        }
-        return super.getDefaultAttributeModifiers(equipmentSlot);
-    }
-
-    @Override
-    public boolean hasCraftingRemainingItem(ItemStack stack) {
-        return true;
-    }
-
-    @Override
-    public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-        ItemStack retval = new ItemStack(this);
-        retval.setDamageValue(itemstack.getDamageValue() + 1);
-        if (retval.getDamageValue() >= retval.getMaxDamage()) {
-            return ItemStack.EMPTY;
-        }
-        return retval;
-    }
-
-    @Override
     public boolean isRepairable(ItemStack itemstack) {
         return false;
     }
