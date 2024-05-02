@@ -3,7 +3,6 @@ package net.davrial.ancindicators.item;
 import net.davrial.ancindicators.ANCIndicators;
 import net.davrial.ancindicators.item.custom.*;
 //import net.davrial.ancindicators.item.custom.MetalDetectorItem;
-import net.davrial.ancindicators.procedures.ModNameAndBlockNameExtracterGetterProcedure;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -89,10 +88,10 @@ public class ModItems {
             () -> new GetterStickItem());
 
     //Bottles
-    public static final RegistryObject<Item> VIAL_OF_DARKENING_SOLUTION = ITEMS.register("vial_of_darkening_solution",
-            () -> new Palette1Item());
-    public static final RegistryObject<Item> VIAL_OF_CLEANING_SOLUTION = ITEMS.register("vial_of_cleaning_solution",
-            () -> new Palette1Item());
+    public static final RegistryObject<Item> VIAL_OF_DARKENING_SOLUTION_BLACK = ITEMS.register("vial_of_darkening_solution_black",
+            () -> new AutomaticUniversalRecoloringItem());
+    public static final RegistryObject<Item> VIAL_OF_CLEANING_SOLUTION_WHITE = ITEMS.register("vial_of_cleaning_solution_white",
+            () -> new AutomaticUniversalRecoloringItem());
     public static final RegistryObject<Item> FLASK_OF_ETERNAL_DARKNESS = ITEMS.register("flask_of_eternal_darkness",
             () -> new FlaskOfEternalDarknessItem());
     public static final RegistryObject<Item> VESSEL_OF_INFINITE_LIGHT = ITEMS.register("vessel_of_infinite_light",

@@ -1,22 +1,15 @@
 package net.davrial.ancindicators.datagen;
 
 import net.davrial.ancindicators.ANCIndicators;
-import net.davrial.ancindicators.block.ModBlocks;
 import net.davrial.ancindicators.item.ModItems;
 import net.davrial.ancindicators.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.nbt.Tag;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagBuilder;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.common.data.ForgeItemTagsProvider;
-import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -50,8 +43,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                     ModItems.PALETTE_BLOCKS.get(),
                     ModItems.FLASK_OF_ETERNAL_DARKNESS.get(),
                     ModItems.VESSEL_OF_INFINITE_LIGHT.get(),
-                    ModItems.VIAL_OF_CLEANING_SOLUTION.get(),
-                    ModItems.VIAL_OF_DARKENING_SOLUTION.get(),
+                    ModItems.VIAL_OF_CLEANING_SOLUTION_WHITE.get(),
+                    ModItems.VIAL_OF_DARKENING_SOLUTION_BLACK.get(),
                     ModItems.VIAL_OF_PAINT_STRONG_RED.get()
                 )
                 .addTag(ModTags.Items.ERASERS)
@@ -437,7 +430,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(   Items.INK_SAC,
                         Items.COAL,
                         Items.CHARCOAL,
-                        ModItems.VIAL_OF_DARKENING_SOLUTION.get()
+                        ModItems.VIAL_OF_DARKENING_SOLUTION_BLACK.get()
                 );
 
         this.tag(ModTags.Items.INDICATOR_DARKENING_ITEMS_WITH_DYES)
@@ -446,7 +439,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         Items.INK_SAC,
                         Items.COAL,
                         Items.CHARCOAL,
-                        ModItems.VIAL_OF_DARKENING_SOLUTION.get()
+                        ModItems.VIAL_OF_DARKENING_SOLUTION_BLACK.get()
                 );
 
         this.tag(ModTags.Items.WRITING_ITEMS)
@@ -523,8 +516,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.WEAK_PAINTS)
                 .add(
-                        ModItems.VIAL_OF_CLEANING_SOLUTION.get(),
-                        ModItems.VIAL_OF_DARKENING_SOLUTION.get()
+                        ModItems.VIAL_OF_CLEANING_SOLUTION_WHITE.get(),
+                        ModItems.VIAL_OF_DARKENING_SOLUTION_BLACK.get()
                 )
         ;
 

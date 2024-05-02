@@ -2,13 +2,10 @@ package net.davrial.ancindicators.item;
 
 import net.davrial.ancindicators.ANCIndicators;
 import net.davrial.ancindicators.block.ModBlocks;
-import net.davrial.ancindicators.block.ModBlocks;
-import net.davrial.ancindicators.util.ModTags;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -227,8 +224,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.PALETTE_TEXT.get());
                         pOutput.accept(ModItems.FLASK_OF_ETERNAL_DARKNESS.get());
                         pOutput.accept(ModItems.VESSEL_OF_INFINITE_LIGHT.get());
-                        pOutput.accept(ModItems.VIAL_OF_DARKENING_SOLUTION.get());
-                        pOutput.accept(ModItems.VIAL_OF_CLEANING_SOLUTION.get());
+                        pOutput.accept(ModItems.VIAL_OF_DARKENING_SOLUTION_BLACK.get());
+                        pOutput.accept(ModItems.VIAL_OF_CLEANING_SOLUTION_WHITE.get());
                         pOutput.accept(ModItems.GETTER_STICK.get());
                         pOutput.accept(ModItems.BOTTLE_OF_PAINT_BASE.get());
                     })
@@ -243,8 +240,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BOTTLE_OF_PAINT_BASE.get());
                         pOutput.accept(ModItems.VESSEL_OF_INFINITE_LIGHT.get());
                         pOutput.accept(ModItems.FLASK_OF_ETERNAL_DARKNESS.get());
-                        pOutput.accept(ModItems.VIAL_OF_CLEANING_SOLUTION.get());
-                        pOutput.accept(ModItems.VIAL_OF_DARKENING_SOLUTION.get());
+                        pOutput.accept(ModItems.VIAL_OF_CLEANING_SOLUTION_WHITE.get());
+                        pOutput.accept(ModItems.VIAL_OF_DARKENING_SOLUTION_BLACK.get());
                         pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_BROWN.get());
                         pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_RED.get());
                         pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_ORANGE.get());

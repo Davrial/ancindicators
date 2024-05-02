@@ -1,7 +1,6 @@
 package net.davrial.ancindicators.datagen;
 
 import net.davrial.ancindicators.ANCIndicators;
-import net.davrial.ancindicators.block.ModBlocks;
 import net.davrial.ancindicators.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -104,8 +103,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         //Bottles
         handheldItem(ModItems.BOTTLE_OF_PAINT_BASE);
-        handheldItem(ModItems.VIAL_OF_DARKENING_SOLUTION);
-        handheldItem(ModItems.VIAL_OF_CLEANING_SOLUTION);
+        handheldItem(ModItems.VIAL_OF_DARKENING_SOLUTION_BLACK);
+        handheldItem(ModItems.VIAL_OF_CLEANING_SOLUTION_WHITE);
         handheldItem(ModItems.FLASK_OF_ETERNAL_DARKNESS);
         handheldItem(ModItems.VESSEL_OF_INFINITE_LIGHT);
         //Paints
