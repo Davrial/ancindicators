@@ -1,4 +1,4 @@
-// 1.20.2	2024-05-02T01:15:32.509983	Item Models: ancindicators
+// 1.20.2	2024-05-02T07:24:31.2475975	Item Models: ancindicators
 7cf7931835a7cccef6dcf1963342fc0cfd04744c assets/ancindicators/models/item/alphabetic_indicator_item_a.json
 ad9a3e1ffc8a4f8213216f05b11a6b45820ac673 assets/ancindicators/models/item/alphabetic_indicator_item_b.json
 a57c330eb733705987aebeb932dfc5c982e83161 assets/ancindicators/models/item/alphabetic_indicator_item_c.json
@@ -148,8 +148,8 @@ fd45c4139177509a466c87e2c7adb4ab260058d5 assets/ancindicators/models/item/text_c
 6af333e6bbe0cc5d3d4c8622d7a7e675b5aa5ab6 assets/ancindicators/models/item/text_color_indicator_template_item.json
 fc3b6b951e37fe4a645d1b3c1079acbf2ac9edf6 assets/ancindicators/models/item/text_color_indicator_template_item_darkened.json
 21be50568f3d87712862e806f315c7c126c487dc assets/ancindicators/models/item/vessel_of_infinite_light.json
-f315c4aea8871e1c2eb381f7b380095ef2ab3717 assets/ancindicators/models/item/vial_of_cleaning_solution.json
-d29874ec64e8b8ab31cd361f76af127e5acee822 assets/ancindicators/models/item/vial_of_darkening_solution.json
+7d21154e074f4b3acc2a3d7b7d15903d0c4ea9ac assets/ancindicators/models/item/vial_of_cleaning_solution_white.json
+ddbb9f4e4d651a69bd2de8e55e4298ba3cb2c2ff assets/ancindicators/models/item/vial_of_darkening_solution_black.json
 ef79391c9dbfb47c11fe1039efa52e48dfeb0ba3 assets/ancindicators/models/item/vial_of_paint_strong_blue.json
 beb4bb101556db6ff1fa07039df4cc6b41aebf82 assets/ancindicators/models/item/vial_of_paint_strong_brown.json
 1731593ba31622500636b951bcef1df2d6efedb6 assets/ancindicators/models/item/vial_of_paint_strong_cyan.json

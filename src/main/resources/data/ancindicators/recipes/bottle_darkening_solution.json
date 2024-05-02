@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc,",
+  "pattern": [
+    "DDD",
+    "DBD",
+    "DDD"
+  ],
+  "key": {
+    "B": {      "item": "ancindicators:bottle_of_paint_base"    },
+    "D": {      "tag": "ancindicators:indicator_darkening_items"    }
+  },
+  "result": {    "item": "ancindicators:vial_of_darkening_solution_black",  "count": 8    }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ancindicators:item/vial_of_darkening_solution_black"
+  }
+}

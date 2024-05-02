@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc,",
+  "pattern": [
+    "DDD",
+    "DBD",
+    "DDD"
+  ],
+  "key": {
+    "B": {      "item": "ancindicators:bottle_of_paint_base"    },
+    "D": {      "item": "minecraft:bone_meal"    }
+  },
+  "result": {    "item": "ancindicators:vial_of_cleaning_solution_white",  "count": 8    }
+}
