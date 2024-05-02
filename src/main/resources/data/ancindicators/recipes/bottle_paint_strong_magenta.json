@@ -7,10 +7,8 @@
     "DDD"
   ],
   "key": {
-    "B": [     {"item": "minecraft:potion{Potion: \"minecraft:thick\"}"},
-               {"item": "minecraft:potion{Potion: \"minecraft:mundane\"}"}
-         ],
-    "D": {      "tag": "minecraft:magenta_dye"    }
+    "B": {      "item": "ancindicators:bottle_of_paint_base"    },
+    "D": {      "item": "minecraft:magenta_dye"    }
   },
   "result": {    "item": "ancindicators:vial_of_paint_strong_magenta",  "count": 8    }
 }

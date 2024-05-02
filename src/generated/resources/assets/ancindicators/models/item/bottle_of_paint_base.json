@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ancindicators:item/bottle_of_paint_base"
+  }
+}

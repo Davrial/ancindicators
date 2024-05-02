@@ -99,6 +99,8 @@ public class ModItems {
             () -> new VesselOfInfiniteLightItem());
 
     //Paints
+    public static final RegistryObject<Item> BOTTLE_OF_PAINT_BASE = ITEMS.register("bottle_of_paint_base",
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> VIAL_OF_PAINT_STRONG_BROWN = ITEMS.register("vial_of_paint_strong_brown",
             () -> new AutomaticUniversalRecoloringItem());

@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-24T19:41:42.5342402	Item Models: ancindicators
+// 1.20.2	2024-05-02T01:15:32.509983	Item Models: ancindicators
 7cf7931835a7cccef6dcf1963342fc0cfd04744c assets/ancindicators/models/item/alphabetic_indicator_item_a.json
 ad9a3e1ffc8a4f8213216f05b11a6b45820ac673 assets/ancindicators/models/item/alphabetic_indicator_item_b.json
 a57c330eb733705987aebeb932dfc5c982e83161 assets/ancindicators/models/item/alphabetic_indicator_item_c.json
@@ -46,6 +46,7 @@ c4f0544c42e2963b55e45c9a61db7ac7f71d4d65 assets/ancindicators/models/item/block_
 2de5899a77304218cbb040a2542dcc4c0f29a1d4 assets/ancindicators/models/item/block_color_indicator_item_white.json
 e5331d936e0576ead95843575712144593a5915c assets/ancindicators/models/item/block_color_indicator_item_yellow.json
 d21cc398587e05bebc228d58cf0e53556462b5a2 assets/ancindicators/models/item/block_color_indicator_template_item.json
+adf17de7b9ea7520bd1dadc6246aeb20ef3cc36c assets/ancindicators/models/item/bottle_of_paint_base.json
 dcde4f0272b94f90030bd8b21559fd1e9f509d2c assets/ancindicators/models/item/darkened_blank_indicator_item.json
 ac69c0b0ff91b520a080d32bd8da4c1e9031cafc assets/ancindicators/models/item/eraser.json
 3044f15a96971d2e965d1e550f61e108805ca6db assets/ancindicators/models/item/flask_of_eternal_darkness.json

@@ -230,6 +230,33 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.VIAL_OF_DARKENING_SOLUTION.get());
                         pOutput.accept(ModItems.VIAL_OF_CLEANING_SOLUTION.get());
                         pOutput.accept(ModItems.GETTER_STICK.get());
+                        pOutput.accept(ModItems.BOTTLE_OF_PAINT_BASE.get());
+                    })
+                    .build()
+    );
+
+    public static final RegistryObject<CreativeModeTab> ANCINDICATORS_PAINTS_TAB = CREATIVE_MODE_TABS.register("ancindicators_paints_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BOTTLE_OF_PAINT_BASE.get()))
+                    .title(Component.translatable("creativetab.ancindicators_misc_items_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        //Misc Items
+                        pOutput.accept(ModItems.BOTTLE_OF_PAINT_BASE.get());
+                        pOutput.accept(ModItems.VESSEL_OF_INFINITE_LIGHT.get());
+                        pOutput.accept(ModItems.FLASK_OF_ETERNAL_DARKNESS.get());
+                        pOutput.accept(ModItems.VIAL_OF_CLEANING_SOLUTION.get());
+                        pOutput.accept(ModItems.VIAL_OF_DARKENING_SOLUTION.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_BROWN.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_RED.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_ORANGE.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_YELLOW.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_LIME.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_GREEN.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_CYAN.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_LIGHT_BLUE.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_BLUE.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_PURPLE.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_MAGENTA.get());
+                        pOutput.accept(ModItems.VIAL_OF_PAINT_STRONG_PINK.get());
                     })
                     .build()
     );

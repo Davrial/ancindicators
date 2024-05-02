@@ -101,7 +101,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.PALETTE_TEXT);
         handheldItem(ModItems.GETTER_STICK);
 
+
         //Bottles
+        handheldItem(ModItems.BOTTLE_OF_PAINT_BASE);
         handheldItem(ModItems.VIAL_OF_DARKENING_SOLUTION);
         handheldItem(ModItems.VIAL_OF_CLEANING_SOLUTION);
         handheldItem(ModItems.FLASK_OF_ETERNAL_DARKNESS);

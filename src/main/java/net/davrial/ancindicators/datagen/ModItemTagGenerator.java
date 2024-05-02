@@ -463,7 +463,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(   ModItems.ERASER.get(),
                         ModItems.PALETTE.get(),
                         ModItems.PALETTE_BLOCKS.get(),
-                        ModItems.PALETTE_TEXT.get()
+                        ModItems.PALETTE_TEXT.get(),
+                        ModItems.BOTTLE_OF_PAINT_BASE.get()
                 )
         ;
 
