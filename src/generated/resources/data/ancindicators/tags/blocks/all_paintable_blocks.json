@@ -1,5 +1,6 @@
 {
   "values": [
-    "#ancindicators:paintable_vanilla_blocks"
+    "#ancindicators:paintable_vanilla_blocks",
+    "#ancindicators:color_indicator_blocks"
   ]
 }

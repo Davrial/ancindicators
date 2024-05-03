@@ -1,17 +1,12 @@
 package net.davrial.ancindicators.procedures;
 
 import net.davrial.ancindicators.ANCIndicators;
-import net.davrial.ancindicators.block.ModBlocks;
-import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -19,20 +14,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
-
-import net.davrial.ancindicators.block.ModBlocks;
-
-import java.util.Map;
-import net.davrial.ancindicators.procedures.*;
 
 
 
@@ -83,39 +71,6 @@ public class AutomaticUniversalRecoloringProcedure {
 
         //Starter "if" to check if item is a Coloring Tool
         if (itemstack.is(ItemTags.create(new ResourceLocation("ancindicators:coloring_tools")))) {
-
-
-            // Getting the NBT from the source block
-            /*
-            Object GetNBTTagsFromOriginalBlock = null;
-                try {
-                        if ((new Object() {
-                            public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-                                BlockEntity blockEntity = world.getBlockEntity(pos);
-                                if (blockEntity != null)
-                                    return blockEntity.getPersistentData().getString(tag);
-                                return "";
-                            }
-                        }.getValue(world, BlockPos.containing(x, y, z), "Items")).isEmpty() == false) {
-                            GetNBTTagsFromOriginalBlock = new Object() {
-                                public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-                                    BlockEntity blockEntity = world.getBlockEntity(pos);
-                                    if (blockEntity != null)
-                                        return blockEntity.getPersistentData().getString(tag);
-                                    System.out.println(blockEntity.getPersistentData().getString(tag));
-                                    return "";
-                                }
-                            }.getValue(world, BlockPos.containing(x, y, z), "Items");
-                            System.out.println("After New Object set: " + GetNBTTagsFromOriginalBlock);
-                        }
-                } catch (Exception e) {
-                    System.out.println("If New Object set failed: " + GetNBTTagsFromOriginalBlock);
-                    System.out.println("Something went wrong with the getting source NBT process");
-                }
-                System.out.println("After New Object set process: " + GetNBTTagsFromOriginalBlock);
-                System.out.println("GetValue check after New Object set process: " + GetNBTTagsFromOriginalBlock);
-                */
-
 
             //Getting Full Block Name (Mod Name + Block Name)
             try {
@@ -193,41 +148,6 @@ public class AutomaticUniversalRecoloringProcedure {
             }
 
 
-            // Replacing the block (to be moved or even removed)
-                /*
-
-                {
-                    BlockPos _bp = BlockPos.containing(x, y, z);
-                    BlockState _bs = ModBlocks.REDSTONE_INDICATOR_TEMPLATE_BLOCK.get().defaultBlockState();
-                    BlockState _bso = world.getBlockState(_bp);
-                    for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-                        Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-                        if (_property != null && _bs.getValue(_property) != null)
-                            try {
-                                _bs = _bs.setValue(_property, (Comparable) entry.getValue());
-                            } catch (Exception e) {
-                            }
-                    }
-                    BlockEntity _be = world.getBlockEntity(_bp);
-                    CompoundTag _bnbt = null;
-                    if (_be != null) {
-                        _bnbt = _be.saveWithFullMetadata();
-                        _be.setRemoved();
-                    }
-                    world.setBlock(_bp, _bs, 3);
-                    if (_bnbt != null) {
-                        _be = world.getBlockEntity(_bp);
-                        if (_be != null) {
-                            try {
-                                _be.load(_bnbt);
-                            } catch (Exception ignored) {
-                            }
-                        }
-                    }
-                }
-
-                */
-
 
             //Block Color Getter
             double ColoredBlockChecking =
@@ -248,8 +168,9 @@ public class AutomaticUniversalRecoloringProcedure {
                     0;
             ColoredBlock =
                     false;
+
+            //Block Color Checking
             try {
-                //Color Checking
                 while (ColoredBlockChecking == 0) {
                     if (GetTextInitial.contains("white" + "_")) {
                         ColoredBlock = true;
@@ -492,6 +413,7 @@ public class AutomaticUniversalRecoloringProcedure {
             }
 
 
+
             //Item Color Getter
             double ColoredItemChecking =
                     0;
@@ -511,7 +433,8 @@ public class AutomaticUniversalRecoloringProcedure {
                     0;
             ColoredItem =
                     false;
-            //Color Checking
+
+            //Item Color Checking
             try {
                 while (ColoredItemChecking == 0) {
                     if (GetItemNameInitial.contains("white" + "_")) {
@@ -796,6 +719,8 @@ public class AutomaticUniversalRecoloringProcedure {
                                             + CBBDFinal
                                             + " replace"
                             );
+
+                        //Beds Procedure
                         String CBBDFinalBeds = CBBDFinal;
                         System.out.println("CBBDFinalBeds: " + CBBDFinalBeds);
                         if (GetBlockName.contains("_bed")) {
@@ -975,7 +900,6 @@ public class AutomaticUniversalRecoloringProcedure {
                                     );
                             }
                         }
-                        //ANCIndicators.MOD_ID.wait(1);
                         CommandBlockOrder = 4;
                     } catch (Exception e) {
                         System.out.println("Something went wrong withe the SetBlock command");
@@ -983,17 +907,9 @@ public class AutomaticUniversalRecoloringProcedure {
                     }
                 }
 
-                //Beds procedure
-                System.out.println("CBBDFinal; " + CBBDFinal);
-                if (CommandBlockOrder == 0 || CommandBlockOrder == 0) {
-
-                    CommandBlockOrder++;
-                }
-
                 //Replace block data command
                 if (CommandBlockOrder == 4) {
                     try {
-                        System.out.println("Is this even doing anything???");
                         if (world instanceof ServerLevel _level)
                             _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "Items", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
                                     "execute as @p run data modify block "
@@ -1015,7 +931,6 @@ public class AutomaticUniversalRecoloringProcedure {
                 //Clear stored block data command
                 if (CommandBlockOrder == 5) {
                     try {
-                        System.out.println("Is this even doing anything???");
                         if (world instanceof ServerLevel _level)
                             _level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "Items", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
                                     "execute as @p run data remove storage colorchangeitemsget Items"
@@ -1027,27 +942,16 @@ public class AutomaticUniversalRecoloringProcedure {
                     }
                 }
                 if (CommandBlockOrder == 6) {
+                    if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("ancindicators:all_paintable_blocks")))) {
+                        world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId((world.getBlockState(BlockPos.containing(x, y, z)))));
+                    }
+                    CommandBlockOrder = 7;
+                }
+
+                if (CommandBlockOrder == 7) {
                     CommandBlockOrder = 0;
                 }
             }
-
-
-                /*
-                try {
-                    //Adding the NBT data back to the new block
-                    if (!world.isClientSide()) {
-                        BlockPos _bp = BlockPos.containing(x, y, z);
-                        BlockEntity _blockEntity = world.getBlockEntity(_bp);
-                        BlockState _bs = world.getBlockState(_bp);
-                        if (_blockEntity != null)
-                            _blockEntity.getPersistentData().putString("Items", GetNBTTagsFromOriginalBlock.toString());
-                        if (world instanceof Level _level)
-                            _level.sendBlockUpdated(_bp, _bs, _bs, 1);
-                    }
-                } catch (Exception e) {
-                    System.out.println("Something went wrong with adding the NBT data back");
-                }
-                */
 
 
             //Play Sound On Finish

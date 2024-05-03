@@ -1,8 +1,8 @@
-// 1.20.2	2024-04-23T07:21:51.2292761	Tags for minecraft:block mod id ancindicators
+// 1.20.2	2024-05-02T07:57:14.2635521	Tags for minecraft:block mod id ancindicators
 3188e4c6df9b5a77d9fe0f0238043374a01afc56 data/ancindicators/tags/blocks/advanced_indicator_blocks.json
 029da9738c6dc4eec84c4523a697a8c9c5d88ee2 data/ancindicators/tags/blocks/all_erasable_blocks.json
 1c58e63bbec43e52d94fb5b76705180c6ce5b37a data/ancindicators/tags/blocks/all_indicator_blocks.json
-483dba8cb4558710b7d0413e0cd4dd29165a9788 data/ancindicators/tags/blocks/all_paintable_blocks.json
+2881462a454e07622aae8eea28d829f144041bf5 data/ancindicators/tags/blocks/all_paintable_blocks.json
 b79bb497e628faf63b7364c70239cbf364de2c6c data/ancindicators/tags/blocks/alphabetic_indicator_blocks.json
 e68d5c2d9d478310e6488414b989eb23fdf9dcb2 data/ancindicators/tags/blocks/blank_indicator_blocks.json
 87c3b1a6485ac32c673a95effbaeda913b9562cd data/ancindicators/tags/blocks/block_color_indicator_blocks.json
@@ -20,7 +20,9 @@ a36f27cb4e066a5ac43ab5d8b4bfa306f5751f1e data/ancindicators/tags/blocks/erasable
 b1f590ceda0a1a5c1471f835ae3977a6ab9da7ff data/ancindicators/tags/blocks/non_blank_indicator_blocks.json
 f85fc554d5e3b9208371e336e010523f94b2e8c9 data/ancindicators/tags/blocks/numeric_indicator_blocks.json
 874675019fb5a8fdceebf416d12def2637455535 data/ancindicators/tags/blocks/odd_numeric_indicator_blocks.json
+ad2aef66c1ecce727de1a1742afb731fb1e0158e data/ancindicators/tags/blocks/paintables_banners.json
 62330de5c4789066d127efdf831e13056377315a data/ancindicators/tags/blocks/paintables_beds.json
+4e49f76123df89ceadb0d3417f9bc65878414f95 data/ancindicators/tags/blocks/paintables_candles.json
 ff1cca038898045e6aaff60ad08bf4096ebbe6fa data/ancindicators/tags/blocks/paintables_carpets.json
 fdaca0dd474d3b28d466066989bdf9247e078393 data/ancindicators/tags/blocks/paintables_concrete.json
 5faeae5cf95d079823f16e1e4a9f634231ce1ef1 data/ancindicators/tags/blocks/paintables_concrete_powder.json

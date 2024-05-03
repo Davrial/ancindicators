@@ -52,6 +52,8 @@ public class ModTags {
         public static final TagKey<Block> PAINTABLES_CONCRETE = tag("paintables_concrete");
         public static final TagKey<Block> PAINTABLES_CONCRETE_POWDER = tag("paintables_concrete_powder");
         public static final TagKey<Block> PAINTABLES_SHULKER_BOXES = tag("paintables_shulker_boxes");
+        public static final TagKey<Block> PAINTABLES_CANDLES = tag("paintables_candles");
+        public static final TagKey<Block> PAINTABLES_BANNERS = tag("paintables_banners");
 
 
         private static TagKey<Block> tag(String name) {
