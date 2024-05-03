@@ -54,6 +54,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLANK_REDSTONE_INDICATOR_BLOCK);
         blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK);
         blockWithItem(ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK);
+        stairsBlock(((StairBlock) ModBlocks.INDICATOR_STAIRS.get()), blockTexture(ModBlocks.BLANK_INDICATOR_BLOCK.get()));
+
 
 
         //Alphabetic Blocks

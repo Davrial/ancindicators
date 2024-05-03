@@ -69,6 +69,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.INDICATOR_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.INDICATOR_SLAB.get()));
+        this.dropSelf(ModBlocks.INDICATOR_STAIRS.get());
 
         //Alphabetic Blocks
         this.dropSelf(ModBlocks.ALPHABETIC_INDICATOR_BLOCK_A.get());

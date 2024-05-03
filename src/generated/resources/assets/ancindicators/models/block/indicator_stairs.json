@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ancindicators:block/blank_indicator_block",
+    "side": "ancindicators:block/blank_indicator_block",
+    "top": "ancindicators:block/blank_indicator_block"
+  }
+}

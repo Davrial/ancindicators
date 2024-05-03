@@ -385,6 +385,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> INDICATOR_SLAB  = registerBlock("indicator_slab",
             () -> new IndicatorSlabBlock());
+    public static final RegistryObject<Block> INDICATOR_STAIRS = registerBlock("indicator_stairs",
+            () -> new StairBlock(() -> ModBlocks.BLANK_INDICATOR_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
 
 
 

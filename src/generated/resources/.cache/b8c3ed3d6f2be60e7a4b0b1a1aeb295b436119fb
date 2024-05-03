@@ -1,4 +1,4 @@
-// 1.20.2	2024-05-02T07:24:31.2475975	Item Models: ancindicators
+// 1.20.2	2024-05-03T09:03:53.6866307	Item Models: ancindicators
 7cf7931835a7cccef6dcf1963342fc0cfd04744c assets/ancindicators/models/item/alphabetic_indicator_item_a.json
 ad9a3e1ffc8a4f8213216f05b11a6b45820ac673 assets/ancindicators/models/item/alphabetic_indicator_item_b.json
 a57c330eb733705987aebeb932dfc5c982e83161 assets/ancindicators/models/item/alphabetic_indicator_item_c.json
@@ -51,6 +51,7 @@ dcde4f0272b94f90030bd8b21559fd1e9f509d2c assets/ancindicators/models/item/darken
 ac69c0b0ff91b520a080d32bd8da4c1e9031cafc assets/ancindicators/models/item/eraser.json
 3044f15a96971d2e965d1e550f61e108805ca6db assets/ancindicators/models/item/flask_of_eternal_darkness.json
 92e78556dcaaf20c9c78cc9b50c89ea6b797c34d assets/ancindicators/models/item/getter_stick.json
+616a1a4705ef31dbefa2a3a9f171e2d454786934 assets/ancindicators/models/item/indicator_stairs.json
 ae8659652c000fb3d8dbf74ed5c384aa47d6c9f6 assets/ancindicators/models/item/light_level_indicator_item_0.json
 da87cffa414b178b7e281a1ad710521fc3c23028 assets/ancindicators/models/item/light_level_indicator_item_1.json
 5d443a3fcea0f9d64cbb0ef135e143ce66698ac7 assets/ancindicators/models/item/light_level_indicator_item_10.json

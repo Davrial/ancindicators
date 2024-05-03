@@ -1,6 +1,7 @@
 package net.davrial.ancindicators.datagen;
 
 import net.davrial.ancindicators.ANCIndicators;
+import net.davrial.ancindicators.block.ModBlocks;
 import net.davrial.ancindicators.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -91,6 +92,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BLANK_REDSTONE_INDICATOR_ITEM);
         simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_TEMPLATE_ITEM);
         simpleItem(ModItems.BLANK_LIGHT_LEVEL_INDICATOR_ITEM);
+        evenSimplerBlockItem(ModBlocks.INDICATOR_STAIRS);
 
         //Misc Items
         handheldItem(ModItems.ERASER);
