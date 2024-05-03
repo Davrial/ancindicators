@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-22T07:06:29.3457512	Loot Tables
+// 1.20.2	2024-05-03T08:38:03.0545246	Loot Tables
 3e020a012f0b690c88362ba92973838dd450fe0f data/ancindicators/loot_tables/blocks/alphabetic_indicator_block_a.json
 d2c9c188997cd68c4b9a1ef7a40d804ef3138a61 data/ancindicators/loot_tables/blocks/alphabetic_indicator_block_b.json
 e9f82451fc3ed030766e255c0890dfd14582cfb7 data/ancindicators/loot_tables/blocks/alphabetic_indicator_block_c.json
@@ -48,6 +48,7 @@ bb328fbe248babb6d2d1dbd5bb4d3a6837aa699a data/ancindicators/loot_tables/blocks/b
 206e8d01040a13410feab6d11807985a4508f462 data/ancindicators/loot_tables/blocks/block_color_indicator_template_block.json
 305f4db55d3bf6e8e86bd4eadd415c391fdd9785 data/ancindicators/loot_tables/blocks/darkened_blank_indicator_block.json
 76aff115cf6d800217dab6b82b43fb1a1a316b96 data/ancindicators/loot_tables/blocks/darkness_block.json
+ab78c3975300551fd9c9445bab52d7c60bd8e1b5 data/ancindicators/loot_tables/blocks/indicator_slab.json
 0938fd67990db01347a107c9c0318c54c686062f data/ancindicators/loot_tables/blocks/light_block.json
 8731cd58faade876a8c88dc50de53ca57e2bd914 data/ancindicators/loot_tables/blocks/light_level_indicator_block_0.json
 464980c82415441a681cb38825a5157e62691d10 data/ancindicators/loot_tables/blocks/light_level_indicator_block_1.json

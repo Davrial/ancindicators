@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "ancindicators:block/blank_indicator_block",
+    "top": "ancindicators:block/blank_indicator_block",
+    "side": "ancindicators:block/indicator_double_slab"
+  },
+  "render_type": "solid"
+}

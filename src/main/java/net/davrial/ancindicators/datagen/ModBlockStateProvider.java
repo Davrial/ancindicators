@@ -55,6 +55,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LIGHT_LEVEL_INDICATOR_TEMPLATE_BLOCK);
         blockWithItem(ModBlocks.BLANK_LIGHT_LEVEL_INDICATOR_BLOCK);
 
+
         //Alphabetic Blocks
         blockWithItem(ModBlocks.ALPHABETIC_INDICATOR_BLOCK_A);
         blockWithItem(ModBlocks.ALPHABETIC_INDICATOR_BLOCK_B);

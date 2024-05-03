@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancindicators:block/indicator_slab"
+    },
+    "type=top": {
+      "model": "ancindicators:block/indicator_slab_top"
+    },
+    "type=double": {
+      "model": "ancindicators:block/indicator_slab_full"
+    }
+  }
+}

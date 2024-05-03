@@ -383,6 +383,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> LIGHT_BLOCK  = registerBlock("light_block",
             () -> new LightBlockBlock());
 
+    public static final RegistryObject<Block> INDICATOR_SLAB  = registerBlock("indicator_slab",
+            () -> new IndicatorSlabBlock());
+
 
 
 
