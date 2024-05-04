@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc,",
+  "category": "building",
   "pattern": [
-    "   ",
-    "   ",
     "111"
   ],
   "key": {

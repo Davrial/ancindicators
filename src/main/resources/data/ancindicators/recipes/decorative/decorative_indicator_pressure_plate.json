@@ -1,10 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc,",
+  "category": "redstone",
   "pattern": [
-    "   ",
-    "   ",
-    "11 "
+    "11"
   ],
   "key": {
     "1": {      "item": "minecraft:blank_indicator_block"    }
