@@ -93,6 +93,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.LIGHT_LEVEL_INDICATOR_TEMPLATE_ITEM);
         simpleItem(ModItems.BLANK_LIGHT_LEVEL_INDICATOR_ITEM);
         evenSimplerBlockItem(ModBlocks.INDICATOR_STAIRS);
+        evenSimplerBlockItem(ModBlocks.INDICATOR_PRESSURE_PLATE);
+        simpleBlockItem(ModBlocks.INDICATOR_DOOR);
+        trapdoorItem(ModBlocks.INDICATOR_TRAPDOOR);
+
+
+
 
         //Misc Items
         handheldItem(ModItems.ERASER);

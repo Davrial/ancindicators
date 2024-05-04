@@ -258,6 +258,20 @@ public class ModCreativeModTabs {
                     .build()
     );
 
+    public static final RegistryObject<CreativeModeTab> ANCINDICATORS_DECORATIVE_TAB = CREATIVE_MODE_TABS.register("ancindicators_decorative_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.INDICATOR_STAIRS.get()))
+                    .title(Component.translatable("creativetab.ancindicators_misc_items_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        //Misc Items
+                        pOutput.accept(ModBlocks.INDICATOR_SLAB.get());
+                        pOutput.accept(ModBlocks.INDICATOR_STAIRS.get());
+                        pOutput.accept(ModBlocks.INDICATOR_DOOR.get());
+                        pOutput.accept(ModBlocks.INDICATOR_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.INDICATOR_PRESSURE_PLATE.get());
+                    })
+                    .build()
+    );
+
     public static final RegistryObject<CreativeModeTab> ANCINDICATORS_ALL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("ancindicators_all_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BLANK_INDICATOR_BLOCK.get()))
                     .title(Component.translatable("creativetab.ancindicators_all_blocks_tab"))
