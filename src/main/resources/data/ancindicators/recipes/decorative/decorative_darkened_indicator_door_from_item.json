@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc,",
+  "pattern": [
+    "11 ",
+    "11 ",
+    "11 "
+  ],
+  "key": {
+    "1": {      "item": "minecraft:darkened_blank_indicator_item"    }
+  },
+  "result": {    "item": "ancindicators:darkened_indicator_door"    }
+}
