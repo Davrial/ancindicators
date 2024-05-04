@@ -315,5 +315,6 @@
   "creativetab.ancindicators_block_color_items_tab": "ANC Indicators Block Color Items Tab",
   "creativetab.ancindicators_text_color_items_tab": "ANC Indicators Text Color Items Tab",
   "creativetab.ancindicators_redstone_items_tab": "ANC Indicators Redstone Items Tab",
-  "creativetab.ancindicators_light_level_items_tab": "ANC Indicators Light Level Items Tab"
+  "creativetab.ancindicators_light_level_items_tab": "ANC Indicators Light Level Items Tab",
+  "creativetab.ancindicators_decorative_tab": "ANC Indicators Decorative Blocks Tab"
 }

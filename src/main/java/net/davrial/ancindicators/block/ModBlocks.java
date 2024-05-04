@@ -390,10 +390,10 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
     public static final RegistryObject<Block> INDICATOR_DOOR = registerBlock("indicator_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).noOcclusion(), BlockSetType.STONE));
-    public static final RegistryObject<Block> INDICATOR_PRESSURE_PLATE = registerBlock("sapphire_pressure_plate",
+    public static final RegistryObject<Block> INDICATOR_PRESSURE_PLATE = registerBlock("indicator_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK),
                     BlockSetType.STONE));
-    public static final RegistryObject<Block> INDICATOR_TRAPDOOR = registerBlock("sapphire_trapdoor",
+    public static final RegistryObject<Block> INDICATOR_TRAPDOOR = registerBlock("indicator_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).noOcclusion(), BlockSetType.STONE));
 
 

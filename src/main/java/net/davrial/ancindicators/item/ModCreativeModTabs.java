@@ -260,7 +260,7 @@ public class ModCreativeModTabs {
 
     public static final RegistryObject<CreativeModeTab> ANCINDICATORS_DECORATIVE_TAB = CREATIVE_MODE_TABS.register("ancindicators_decorative_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.INDICATOR_STAIRS.get()))
-                    .title(Component.translatable("creativetab.ancindicators_misc_items_tab"))
+                    .title(Component.translatable("creativetab.ancindicators_decorative_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         //Misc Items
                         pOutput.accept(ModBlocks.INDICATOR_SLAB.get());
