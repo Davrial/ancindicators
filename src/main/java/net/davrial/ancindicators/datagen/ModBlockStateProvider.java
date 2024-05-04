@@ -59,6 +59,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.INDICATOR_DOOR.get()), modLoc("block/indicator_door_bottom"), modLoc("block/indicator_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.INDICATOR_TRAPDOOR.get()), modLoc("block/indicator_trapdoor"), true, "cutout");
 
+        stairsBlock(((StairBlock) ModBlocks.DARKENED_INDICATOR_STAIRS.get()), blockTexture(ModBlocks.DARKENED_BLANK_INDICATOR_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.DARKENED_INDICATOR_PRESSURE_PLATE.get()), blockTexture(ModBlocks.DARKENED_BLANK_INDICATOR_BLOCK.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.DARKENED_INDICATOR_DOOR.get()), modLoc("block/darkened_indicator_door_bottom"), modLoc("block/darkened_indicator_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.DARKENED_INDICATOR_TRAPDOOR.get()), modLoc("block/darkened_indicator_trapdoor"), true, "cutout");
+
 
 
 

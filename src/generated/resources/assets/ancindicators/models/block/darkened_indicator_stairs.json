@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ancindicators:block/darkened_blank_indicator_block",
+    "side": "ancindicators:block/darkened_blank_indicator_block",
+    "top": "ancindicators:block/darkened_blank_indicator_block"
+  }
+}

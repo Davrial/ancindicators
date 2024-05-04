@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ancindicators:sapphire_pressure_plate"
+          "name": "ancindicators:indicator_pressure_plate"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "ancindicators:blocks/sapphire_pressure_plate"
+  "random_sequence": "ancindicators:blocks/indicator_pressure_plate"
 }

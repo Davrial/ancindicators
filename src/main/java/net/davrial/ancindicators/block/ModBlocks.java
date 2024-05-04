@@ -396,6 +396,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> INDICATOR_TRAPDOOR = registerBlock("indicator_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).noOcclusion(), BlockSetType.STONE));
 
+    public static final RegistryObject<Block> DARKENED_INDICATOR_SLAB  = registerBlock("darkened_indicator_slab",
+            () -> new DarkenedIndicatorSlabBlock());
+    public static final RegistryObject<Block> DARKENED_INDICATOR_STAIRS = registerBlock("darkened_indicator_stairs",
+            () -> new StairBlock(() -> ModBlocks.DARKENED_BLANK_INDICATOR_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).mapColor(MapColor.QUARTZ)));
+    public static final RegistryObject<Block> DARKENED_INDICATOR_DOOR = registerBlock("darkened_indicator_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).noOcclusion(), BlockSetType.STONE));
+    public static final RegistryObject<Block> DARKENED_INDICATOR_PRESSURE_PLATE = registerBlock("darkened_indicator_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK),
+                    BlockSetType.STONE));
+    public static final RegistryObject<Block> DARKENED_INDICATOR_TRAPDOOR = registerBlock("darkened_indicator_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).sound(SoundType.BONE_BLOCK).noOcclusion(), BlockSetType.STONE));
+
 
 
 

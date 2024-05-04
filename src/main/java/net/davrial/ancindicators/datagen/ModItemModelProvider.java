@@ -96,6 +96,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.INDICATOR_PRESSURE_PLATE);
         simpleBlockItem(ModBlocks.INDICATOR_DOOR);
         trapdoorItem(ModBlocks.INDICATOR_TRAPDOOR);
+        evenSimplerBlockItem(ModBlocks.DARKENED_INDICATOR_STAIRS);
+        evenSimplerBlockItem(ModBlocks.DARKENED_INDICATOR_PRESSURE_PLATE);
+        simpleBlockItem(ModBlocks.DARKENED_INDICATOR_DOOR);
+        trapdoorItem(ModBlocks.DARKENED_INDICATOR_TRAPDOOR);
 
 
 

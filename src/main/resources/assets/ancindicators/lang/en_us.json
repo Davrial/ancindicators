@@ -19,6 +19,17 @@
   "block.ancindicators.light_level_indicator_template_block": "Light Level Indicator Template Block",
   "block.ancindicators.blank_light_level_indicator_block": "Blank Light Level Indicator Block",
 
+  "block.ancindicators.indicator_slab": "Indicator Slab",
+  "block.ancindicators.darkened_indicator_slab": "Darkened Indicator Slab",
+  "block.ancindicators.indicator_stairs": "Indicator Stairs",
+  "block.ancindicators.darkened_indicator_stairs": "Darkened Indicator Stairs",
+  "block.ancindicators.indicator_pressure_plate": "Indicator Pressure Plate",
+  "block.ancindicators.darkened_indicator_pressure_plate": "Darkened Indicator Pressure Plate",
+  "block.ancindicators.indicator_door": "Indicator Door",
+  "block.ancindicators.darkened_indicator_door": "Darkened Indicator Door",
+  "block.ancindicators.indicator_trapdoor": "Indicator Trapdoor",
+  "block.ancindicators.darkened_indicator_trapdoor": "Darkened Indicator Trapdoor",
+
   "block.ancindicators.alphabetic_indicator_block_a": "Alphabetic Indicator: A (Block)",
   "block.ancindicators.alphabetic_indicator_block_b": "Alphabetic Indicator: B (Block)",
   "block.ancindicators.alphabetic_indicator_block_c": "Alphabetic Indicator: C (Block)",

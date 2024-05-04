@@ -268,6 +268,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.INDICATOR_DOOR.get());
                         pOutput.accept(ModBlocks.INDICATOR_TRAPDOOR.get());
                         pOutput.accept(ModBlocks.INDICATOR_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.DARKENED_INDICATOR_SLAB.get());
+                        pOutput.accept(ModBlocks.DARKENED_INDICATOR_STAIRS.get());
+                        pOutput.accept(ModBlocks.DARKENED_INDICATOR_DOOR.get());
+                        pOutput.accept(ModBlocks.DARKENED_INDICATOR_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.DARKENED_INDICATOR_PRESSURE_PLATE.get());
                     })
                     .build()
     );

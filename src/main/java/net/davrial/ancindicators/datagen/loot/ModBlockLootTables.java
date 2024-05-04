@@ -75,6 +75,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.INDICATOR_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.INDICATOR_TRAPDOOR.get());
 
+        this.add(ModBlocks.DARKENED_INDICATOR_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.DARKENED_INDICATOR_SLAB.get()));
+        this.dropSelf(ModBlocks.DARKENED_INDICATOR_STAIRS.get());
+        this.add(ModBlocks.DARKENED_INDICATOR_DOOR.get(),
+                block -> createDoorTable(ModBlocks.DARKENED_INDICATOR_DOOR.get()));
+        this.dropSelf(ModBlocks.DARKENED_INDICATOR_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.DARKENED_INDICATOR_TRAPDOOR.get());
+
         //Alphabetic Blocks
         this.dropSelf(ModBlocks.ALPHABETIC_INDICATOR_BLOCK_A.get());
         this.dropSelf(ModBlocks.ALPHABETIC_INDICATOR_BLOCK_B.get());
